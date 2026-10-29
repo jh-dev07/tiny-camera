@@ -1,0 +1,30 @@
+URL,Resource type,Downloaded locally,Notes
+https://files.waveshare.com/upload/d/da/OV5640_DataSheet.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://github.com/STMicroelectronics/STM32CubeF4,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/STMicroelectronics/STM32CubeF4/blob/master/Projects/STM32469I_EVAL/Examples/DCMI/DCMI_CaptureMode/Src/main.c,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/STMicroelectronics/STM32CubeF4/tree/master/Projects/STM32469I_EVAL/Examples/DCMI/DCMI_CaptureMode,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/STMicroelectronics/stm32f4xx-hal-driver,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/STMicroelectronics/stm32f4xx-hal-driver/blob/master/Src/stm32f4xx_hal_dcmi.c,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/iwatake2222/Camera_STM32_StdLib,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/iwatake2222/DigitalCamera_STM32,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/mfkiwl/STM32-F7-ov2640-DCMI-example,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/t27/stm32f4-dcmi-jpeg,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/tarasii/stm32f429_ov2640_lcd,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/tarasii/stm32f429_ov2640_lcd/blob/master/dcmi.c,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://github.com/xujunjie96/STM32F407-OV7725,GitHub repository/source,NO,External resource link; requires internet; no local copy obtained
+https://www.arducam.com/downloads/shields/ArduCAM_Camera_Shield_V2_DS.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.buydisplay.com/square-2-inch-480x360-ips-tft-lcd-display-spi-rgb-interface,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.camemake.eu/shop/endoscope-17/cm-endo-001-ultra-compact-endoscope-module-with-omnivision-ov6946-sensor-957,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.ichome.com/product-detail/omnivision-technologies/ovm6948-rala,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.omnivision-group.com/files/pd/file/OH0117-PB-v1.4-WEB.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/products/oh0117/,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/products/ov426/,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/products/ov6946/,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/products/ov6948/,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/products/ovm6948/,Product/manufacturer page,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/wp-content/uploads/2022/01/OV6946-PB-v1.8-WEB.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/wp-content/uploads/2023/02/OV6948-PB-v1.7-WEB.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/wp-content/uploads/2023/02/OVM6946-PB-v1.7-WEB.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/wp-content/uploads/2023/03/OVM6948-PB-v1.5-WEB.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.ovt.com/wp-content/uploads/2024/07/OV426-PB-v1.2-WEB.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained
+https://www.st.com/resource/en/application_note/an5020-introduction-to-digital-camera-interface-dcmi-for-stm32-mcus-stmicroelectronics.pdf,PDF datasheet/technical document,NO,External resource link; requires internet; no local copy obtained

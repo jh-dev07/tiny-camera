@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+    <meta name="generator" content="WordPress 7.1.4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link rel="shortcut icon" href="https://www.ovt.com/wp-content/themes/ovt/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.ovt.com/wp-content/themes/ovt/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://www.ovt.com/wp-content/themes/ovt/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.ovt.com/wp-content/themes/ovt/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.ovt.com/wp-content/themes/ovt/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://www.ovt.com/wp-content/themes/ovt/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/css/motion-ui.min.css" />
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/css/BeerSlider.css" />
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/css/nouislider.min.css" />
+    <link rel="stylesheet" href="https://www.ovt.com/wp-content/themes/ovt/style-2023.css?ver=ef07f05bdbdc8bf226eb16a0b1e792ef" />
+    <link rel="shortcut icon" href="https://www.ovt.com/wp-content/themes/ovt/favicon.ico">
+    
+
+    
+    <meta name="google-site-verification" content="w1NZYX6JHQLr4PBuv6GhUccKFNDwOQm5HnrR7N3a2Xc">
+    <meta name="google-site-verification" content="8J8NvWKsQWDejz2b6sGQvwHougfVypvc0QkPKT0XhvU" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <!-- Google Consent Mode v2 — Must be initialized BEFORE GTM loads -->
+    <script id="gtm-consent-mode">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        /**
+         * Read current consent from the CookieYes cookie.
+         * CookieYes stores consent in a cookie named 'cookieyes-consent'.
+         * Format: "consentid:XXX,consent:yes,action:yes,analytics:yes,..."
+         * Returns an object with boolean flags per category.
+         *
+         * @returns {Object} { analytics: bool, advertisement: bool, functional: bool }
+         */
+        function getCookieYesConsent() {
+            var result = {
+                analytics:     false,
+                advertisement: false,
+                functional:    false
+            };
+
+            var match = document.cookie.match(/(^| )cookieyes-consent=([^;]+)/);
+            if (!match) return result;
+
+            try {
+                // Cookie is URL-encoded key:value pairs separated by commas
+                var decoded = decodeURIComponent(match[2]);
+                decoded.split(',').forEach(function(pair) {
+                    var parts = pair.split(':');
+                    if (parts.length === 2) {
+                        result[parts[0].trim()] = parts[1].trim() === 'yes';
+                    }
+                });
+            } catch (e) {
+                // Parsing failed — keep defaults (all denied)
+            }
+
+            return result;
+        }
+
+        // Read existing consent state BEFORE GTM loads
+        // This handles returning visitors who already made a choice
+        var ckyConsent = getCookieYesConsent();
+
+        // Set Consent Mode v2 defaults
+        // CookieYes categories → Consent Mode v2 mapping:
+        //   analytics     → analytics_storage, personalization_storage
+        //   advertisement → ad_storage, ad_user_data, ad_personalization
+        //   functional    → functionality_storage (granted by default anyway)
+        gtag('consent', 'default', {
+            'analytics_storage':       ckyConsent.analytics     ? 'granted' : 'denied',
+            'ad_storage':              ckyConsent.advertisement ? 'granted' : 'denied',
+            'ad_user_data':            ckyConsent.advertisement ? 'granted' : 'denied',
+            'ad_personalization':      ckyConsent.advertisement ? 'granted' : 'denied',
+            'functionality_storage':   'granted',
+            'personalization_storage': ckyConsent.analytics     ? 'granted' : 'denied',
+            'security_storage':        'granted',
+            'wait_for_update':         2000
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P65TTT');</script>
+    <!-- End Google Tag Manager -->
+    
+	<!-- This site is optimized with the Yoast SEO Premium plugin v26.1 (Yoast SEO v28.7) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<title>OV426</title>
+	<meta name="description" content="OV426 Camera Bridge Processor | OMNIVISION" />
+	<link rel="canonical" href="https://www.ovt.com/products/ov426/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="OV426" />
+	<meta property="og:description" content="Camera Bridge Processor" />
+	<meta property="og:url" content="https://www.ovt.com/products/ov426/" />
+	<meta property="og:site_name" content="OMNIVISION" />
+	<meta property="article:publisher" content="https://www.facebook.com/OMNIVISIONOfficial/?fref=ts" />
+	<meta property="article:modified_time" content="2024-11-21T00:14:43+00:00" />
+	<meta property="og:image" content="https://www.ovt.com/wp-content/uploads/2021/12/OV426-ASIC.png" />
+	<meta property="og:image:width" content="500" />
+	<meta property="og:image:height" content="500" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@OMNIVISION_NEWS" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="2 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.ovt.com\/products\/ov426\/","url":"https:\/\/www.ovt.com\/products\/ov426\/","name":"OV426","isPartOf":{"@id":"https:\/\/www.ovt.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.ovt.com\/products\/ov426\/#primaryimage"},"image":{"@id":"https:\/\/www.ovt.com\/products\/ov426\/#primaryimage"},"thumbnailUrl":"https:\/\/www.ovt.com\/wp-content\/uploads\/2021\/12\/OV426-ASIC.png","datePublished":"2021-12-13T10:00:39+00:00","dateModified":"2024-11-21T00:14:43+00:00","description":"OV426 Camera Bridge Processor | OMNIVISION","breadcrumb":{"@id":"https:\/\/www.ovt.com\/products\/ov426\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.ovt.com\/products\/ov426\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.ovt.com\/products\/ov426\/#primaryimage","url":"https:\/\/www.ovt.com\/wp-content\/uploads\/2021\/12\/OV426-ASIC.png","contentUrl":"https:\/\/www.ovt.com\/wp-content\/uploads\/2021\/12\/OV426-ASIC.png","width":500,"height":500,"caption":"OV426 ASIC Camera Bridge Processor"},{"@type":"BreadcrumbList","@id":"https:\/\/www.ovt.com\/products\/ov426\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.ovt.com\/"},{"@type":"ListItem","position":2,"name":"Product","item":"https:\/\/www.ovt.com\/products\/"},{"@type":"ListItem","position":3,"name":"OV426"}]},{"@type":"WebSite","@id":"https:\/\/www.ovt.com\/#website","url":"https:\/\/www.ovt.com\/","name":"OMNIVISION","description":"","publisher":{"@id":"https:\/\/www.ovt.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.ovt.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/www.ovt.com\/#organization","name":"OMNIVISION","url":"https:\/\/www.ovt.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.ovt.com\/#\/schema\/logo\/image\/","url":"https:\/\/www.ovt.com\/wp-content\/uploads\/2025\/06\/OMNIVISION-RGB-NARROW-SILVER-WHITE-r.svg","contentUrl":"https:\/\/www.ovt.com\/wp-content\/uploads\/2025\/06\/OMNIVISION-RGB-NARROW-SILVER-WHITE-r.svg","width":893,"height":179,"caption":"OMNIVISION"},"image":{"@id":"https:\/\/www.ovt.com\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/OMNIVISIONOfficial\/?fref=ts","https:\/\/x.com\/OMNIVISION_NEWS","https:\/\/www.linkedin.com\/company\/omnivision","https:\/\/www.youtube.com\/user\/OMNIVISIONTech"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="OMNIVISION &raquo; OV426 Comments Feed" href="https://www.ovt.com/products/ov426/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.ovt.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ovt.com%2Fproducts%2Fov426%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.ovt.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ovt.com%2Fproducts%2Fov426%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*wp_block_styles_on_demand_placeholder:6ae31e7583157*/
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="wp-block-styles-placeholder-inline-css">
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the block styles printed at wp_footer." }
+/*# sourceURL=wp-block-styles-placeholder-inline-css */
+</style>
+<style id="wp-global-styles-placeholder-inline-css">
+:root { --wp-internal-comment: "Placeholder for wp_hoist_late_printed_styles() to replace with the global-styles printed at wp_footer." }
+/*# sourceURL=wp-global-styles-placeholder-inline-css */
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.ovt.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7' media='all' />
+<style id="contact-form-7-inline-css">
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+/*# sourceURL=contact-form-7-inline-css */
+</style>
+<link rel='stylesheet' id='wpcf7-redirect-script-frontend-css' href='https://www.ovt.com/wp-content/plugins/wpcf7-redirect/build/assets/frontend-script.css?ver=2c532d7e2be36f6af233' media='all' />
+<link rel='stylesheet' id='pojo-a11y-css' href='https://www.ovt.com/wp-content/plugins/pojo-accessibility/modules/legacy/assets/css/style.min.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='theme-fonts-titillium-css' href='https://www.ovt.com/wp-content/uploads/fonts/2c5cd01110ef0092fd50dcd3239cc34c/font.css?v=1762433173' media='all' />
+<link rel='stylesheet' id='taxopress-frontend-css-css' href='https://www.ovt.com/wp-content/plugins/simple-tags/assets/frontend/css/frontend.css?ver=4.0.0' media='all' />
+<script id="jquery-core-js" src="https://www.ovt.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.ovt.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="taxopress-frontend-js-js" src="https://www.ovt.com/wp-content/plugins/simple-tags/assets/frontend/js/frontend.js?ver=4.0.0"></script>
+<link rel="https://api.w.org/" href="https://www.ovt.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ovt.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://www.ovt.com/?p=3203' />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123716291-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123716291-1');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N4XQXNMMJZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N4XQXNMMJZ');
+</script>
+
+<meta name="msvalidate.01" content="03A5D8B1C3F5AC789072DF577A81D2A5" /><style type="text/css">
+#pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a{ background-color: #000000;	color: #ffffff;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items.pojo-a11y-links{ border-color: #000000;}
+body.pojo-a11y-focusable a:focus{ outline-style: solid !important;	outline-width: 1px !important;	outline-color: #FF0000 !important;}
+#pojo-a11y-toolbar{ top: 25vh !important;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay{ background-color: #ffffff;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a, #pojo-a11y-toolbar .pojo-a11y-toolbar-overlay p.pojo-a11y-toolbar-title{ color: #333333;}
+#pojo-a11y-toolbar .pojo-a11y-toolbar-overlay ul.pojo-a11y-toolbar-items li.pojo-a11y-toolbar-item a.active{ background-color: #4054b2;	color: #ffffff;}
+@media (max-width: 767px) { #pojo-a11y-toolbar { top: 30vh !important; } }</style><style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style class="wpcode-css-snippet">.form-element.acceptance{
+	margin: 10px 0;
+	padding-left:0;
+}
+.form-element.acceptance. acceptance-first{
+	margin: 15px 0 0 0;
+}
+.acceptance-notes p{
+	font-size:13px;
+	line-height:1.2;
+}
+.acceptance-notes-mkt p{
+	margin-bottom: 30px;
+}
+.form-element.acceptance  label{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	cursor:pointer;	
+}
+.form-element.acceptance  label:hover{
+	
+}
+.form-element.acceptance  .wpcf7-acceptance{
+	display:block;
+}
+.form-element.acceptance label span{
+	color:black;
+	display:block;
+	padding-left: 30px;
+	font-size: 16px;
+
+}
+.form-element.acceptance label strong.red{
+	font-size:1.1em;
+	color:red;
+}
+.form-element.acceptance _input[type="checkbox"]{
+	margin:0 1em 0 0;
+	width: 20px;
+	position: absolute;
+	z-index:10;
+	left:0;
+	top: -8px;
+}
+
+.form-element.acceptance  .wpcf7-list-item{
+	margin:0;
+	width: 100%;
+    display: block;	
+}
+.form-element.acceptance .wpcf7-form-control-wrap{
+	padding:0;
+}
+.cf7-cf-turnstile{
+	padding-top: 50px;
+}</style><style id="wp-custom-css">
+.app-auto-usecases-section-1-number {
+    display: none;
+}
+a:not([href]) {
+cursor: default;
+}
+
+/*search box on .header-search-content*/
+header  .header-search-content #s{
+	color:white;
+}
+/* update form footer */
+.footer-subscribe-form {
+    margin-bottom: 10px;
+    position: relative;
+    padding-right: 0px;
+}
+.footer-subscribe-form-text p {
+                      font-size: 12px;
+                      font-weight: 400;
+                      line-height: 2;
+                      color: #5a5b5b;
+                    }
+                    .footer-subscribe-form .gchoice {
+                      width: 33%;
+                      float:left;
+                    }
+                    .footer-subscribe-form .gform_wrapper.gravity-theme .gfield-choice-input+label {
+                      margin-bottom: 0;
+                      max-width: calc(100% - 32px);
+                      vertical-align: top;
+                      margin-top: 20px;
+                    }
+
+
+
+                    .footer-subscribe-form .gform_wrapper.gravity-theme .gchoice {
+                      float:left;
+                    }
+                    .footer-subscribe-form .gform_wrapper.gravity-theme .gfield-choice-input+label {
+                      margin-bottom: 0;
+                      max-width: calc(100% - 32px);
+                      vertical-align: top;
+                      margin-top: 12px;
+                    }
+                    .footer-subscribe-form .gform_wrapper.gravity-theme input[type="checkbox"] {
+                      background-color: red;
+                    }
+                    .footer-subscribe-form .gform_wrapper.gravity-theme .ginput_container input[type="text"], 
+                    .footer-subscribe-form .gform_wrapper.gravity-theme .ginput_container input[type="email"] {
+                      box-shadow: none;
+                      background: transparent;
+                      margin: 0;
+                      border: none;
+                      border-bottom: 1px solid #003478;
+                      height: 48px;
+                      font-size: 18px;
+                      line-height: 1.55;
+                      color: #262626;
+                      padding: 5px 0;
+                    }
+
+                    .footer-subscribe-form .gform_wrapper.gravity-theme .gform_footer input[type="submit"] {
+                      display: inline-block;
+                      width: 50px;
+                      height: 50px;
+                      border: solid 1px #e82112;
+                      border-radius: 50%;
+                      /* position: absolute; */
+                      top: -1px;
+                      right: 0;
+                      background: url(https://www.ovt.com/wp-content/themes/ovt/img/icon-chev-right-red.svg) no-repeat center center;
+                      transition: 0.2s;
+margin: 0 auto;
+											color:#fff;
+                    }
+.footer-subscribe-form .gform_wrapper.gravity-theme input#input_1_7_1 {
+	float:left;
+}
+
+.footer-subscribe-form .gform_wrapper.gravity-theme .gfield_consent_label {
+	float:left;
+	width:83%;
+	margin-top:10px;
+}
+
+@media only screen and (max-width: 640px) {
+	.footer-subscribe-form .gchoice {
+    width: 50%;
+}
+.footer-subscribe-form .gform_wrapper.gravity-theme .gfield-choice-input+label {
+    margin-bottom: 0;
+    max-width: calc(50% - 0px);
+    vertical-align: top;
+    margin-top: 12px;
+}
+	
+	
+}
+
+/* end update form footer*/
+
+/*fix accesibility tools on menu open */
+@media only screen and (max-width: 1024px) {
+	#pojo-a11y-toolbar{
+		z-index:999;
+	}
+};
+
+
+
+/*applications/machine-vision tweak*/
+body.page-id-8582 .spinning-image-holder .sdot{
+	top: 50%;
+	width: 40%;
+}
+</style>
+
+  </head>
+  <body class="wp-singular product-template-default single single-product postid-3203 wp-custom-logo wp-theme-ovt ally-default">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P65TTT"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- u -->
+
+    <header>
+            <div class="row">
+        <div class="header-logo">
+          <a href="https://www.ovt.com">
+              <!-- <img src="https://www.ovt.com/wp-content/themes/ovt/img/logo-silver.png" /> -->
+
+            <img src="https://www.ovt.com/wp-content/uploads/2025/06/OMNIVISION-RGB-NARROW-SILVER-WHITE-r.svg" alt="OMNIVISION">          </a>
+        </div>
+        <div class="header-nav">
+          <nav>
+            <ul id="menu-main-menu" class="menu"><li id="menu-item-1613" class="menu-item-products menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1613"><a>Products</a>
+<ul class="sub-menu">
+	<li id="menu-item-1731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1731"><a href="/products#image-sensor">Image Sensors</a></li>
+	<li id="menu-item-1732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1732"><a href="/products#asic">ASIC</a></li>
+	<li id="menu-item-1733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733"><a href="/products#cameracubechip">CameraCubeChip®</a></li>
+	<li id="menu-item-1734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1734"><a href="/products#lcos">LCOS</a></li>
+	<li id="menu-item-4184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4184"><a href="/products#touchanddisplay">Display Solutions</a></li>
+	<li id="menu-item-7333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7333"><a href="/products#ovmed-isp">OVMed® ISP</a></li>
+	<li id="menu-item-7334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7334"><a href="/products#cable-module">OVMed® Cable Module</a></li>
+</ul>
+</li>
+<li id="menu-item-765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-765"><a>Applications</a>
+<ul class="sub-menu">
+	<li id="menu-item-1616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1616"><a href="https://www.ovt.com/applications/automotive/">Automotive</a>
+	<ul class="sub-menu">
+		<li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="https://www.ovt.com/applications/automotive/">Overview</a></li>
+		<li id="menu-item-2907" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2907"><a href="https://www.ovt.com/applications/automotive/sensing-applications/">Automotive Sensing Applications</a></li>
+		<li id="menu-item-2906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.ovt.com/applications/automotive/viewing-applications/">Automotive Viewing Applications</a></li>
+	</ul>
+</li>
+	<li id="menu-item-10236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10236"><a href="https://www.ovt.com/applications/machine-vision/">Machine Vision</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2923"><a href="https://www.ovt.com/applications/iot-emerging/scanner/">Scanner</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1617"><a href="https://www.ovt.com/applications/medical/">Medical</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1541"><a href="https://www.ovt.com/applications/medical/">Overview</a></li>
+		<li id="menu-item-2908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a href="https://www.ovt.com/applications/medical/brain-eyes-heart-and-spine/">Brain, Eyes, Heart &#038; Spine</a></li>
+		<li id="menu-item-5815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5815"><a href="https://www.ovt.com/applications/medical/dental/">Dental</a></li>
+		<li id="menu-item-2909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2909"><a href="https://www.ovt.com/applications/medical/ear-nose-throat-and-airway-management/">Ear, Nose, Throat &#038; Airway</a></li>
+		<li id="menu-item-2910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2910"><a href="https://www.ovt.com/applications/medical/stomach-intestine/">Stomach &#038;Intestine</a></li>
+		<li id="menu-item-2911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2911"><a href="https://www.ovt.com/applications/medical/urology-and-gynaecology/">Urology &#038; Gynaecology</a></li>
+		<li id="menu-item-2912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2912"><a href="https://www.ovt.com/applications/medical/musculo-skeletal/">Musculo Skeletal</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1618"><a href="https://www.ovt.com/applications/mobile-devices/">Mobile</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1542"><a href="https://www.ovt.com/applications/mobile-devices/">Overview</a></li>
+		<li id="menu-item-2915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2915"><a href="https://www.ovt.com/applications/mobile-devices/3d-machine-vision/">3D Machine Vision</a></li>
+		<li id="menu-item-2914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2914"><a href="https://www.ovt.com/applications/mobile-devices/still-and-video-capturing/">Still and Video Capturing</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1619"><a href="https://www.ovt.com/applications/surveillance/">Security</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1543"><a href="https://www.ovt.com/applications/surveillance/">Overview</a></li>
+		<li id="menu-item-2917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2917"><a href="https://www.ovt.com/applications/surveillance/commercial-industrial-security-cameras/">Commercial Security Cameras</a></li>
+		<li id="menu-item-2918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="https://www.ovt.com/applications/surveillance/smart-home-monitoring/">Smart Home Monitoring</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1620" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1620"><a href="https://www.ovt.com/applications/iot-emerging/">Emerging</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1540"><a href="https://www.ovt.com/applications/iot-emerging/">Overview</a></li>
+		<li id="menu-item-2919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="https://www.ovt.com/applications/iot-emerging/ar-applications/">AR Applications</a></li>
+		<li id="menu-item-2920" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="https://www.ovt.com/applications/iot-emerging/vr-applications/">VR Applications</a></li>
+		<li id="menu-item-2922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2922"><a href="https://www.ovt.com/applications/iot-emerging/robotic-vacuums/">Robotic Vacuums</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1621"><a href="https://www.ovt.com/applications/computing/">Computing</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://www.ovt.com/applications/computing/">Overview</a></li>
+		<li id="menu-item-2913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2913"><a href="https://www.ovt.com/applications/computing/3d-machine-vision/">3D Machine Vision</a></li>
+		<li id="menu-item-2916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2916"><a href="https://www.ovt.com/applications/computing/still-image-video-camera/">Still Image Video Camera</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1614" class="nav-tech menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1614"><a>Technologies</a>
+<ul class="sub-menu">
+	<li id="menu-item-143" class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-143"><a>Pixel technology</a></li>
+	<li id="menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453"><a href="https://www.ovt.com/technologies/nyxel-technology/">Nyxel® NIR (Near-Infrared) Sensor Technology</a></li>
+	<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://www.ovt.com/technologies/purecel/">PureCel®</a></li>
+	<li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="https://www.ovt.com/technologies/purecel-plus/">PureCel®Plus</a></li>
+	<li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://www.ovt.com/technologies/rgb-ir-technology/">RGB-IR Technology</a></li>
+	<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="https://www.ovt.com/technologies/omnipixel-3-gs/">OmniPixel®3‑GS</a></li>
+	<li id="menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://www.ovt.com/technologies/omnipixel-3-hs/">OmniPixel®3‑HS</a></li>
+	<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="https://www.ovt.com/technologies/omnibsi/">OmniBSI™</a></li>
+	<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="https://www.ovt.com/technologies/omnibsi-2/">OmniBSI™-2</a></li>
+	<li id="menu-item-8785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8785"><a href="https://www.ovt.com/technologies/theiacel-technology/">TheiaCel® Technology</a></li>
+	<li id="menu-item-1544" class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-1544"><a>HDR</a></li>
+	<li id="menu-item-1548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1548"><a href="https://www.ovt.com/technologies/hdr/">HDR Technology</a></li>
+	<li id="menu-item-5695" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5695"><a href="https://www.ovt.com/technologies/dcg-technology/">DCG™ Technology</a></li>
+	<li id="menu-item-1550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1550"><a href="https://www.ovt.com/technologies/scg-technology/">SCG Technology</a></li>
+	<li id="menu-item-1545" class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-1545"><a>CameraCubeChip®</a></li>
+	<li id="menu-item-8289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8289"><a href="https://www.ovt.com/technologies/antlinx/">AntLinx®</a></li>
+	<li id="menu-item-1547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1547"><a href="https://www.ovt.com/technologies/cameracubechip/">CameraCubeChip®</a></li>
+	<li id="menu-item-1546" class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-1546"><a>LCOS</a></li>
+	<li id="menu-item-1549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1549"><a href="https://www.ovt.com/technologies/lcos/">Liquid Crystal on Silicon (LCOS)</a></li>
+</ul>
+</li>
+<li id="menu-item-1615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1615"><a>Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://www.ovt.com/support/technical-support/">Technical Support</a></li>
+</ul>
+</li>
+<li id="menu-item-5676" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5676"><a>ESG</a>
+<ul class="sub-menu">
+	<li id="menu-item-5677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5677"><a href="https://www.ovt.com/esg/">Environmental, Social, and Governance</a></li>
+</ul>
+</li>
+<li id="menu-item-9163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9163"><a href="https://www.omnivision-group.com/GDR-offering-related">Investors</a></li>
+<li id="menu-item-3460" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3460"><a>Careers</a>
+<ul class="sub-menu">
+	<li id="menu-item-3447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3447"><a href="https://www.ovt.com/company/careers/">Overview</a></li>
+	<li id="menu-item-3458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3458"><a href="https://www.ovt.com/company/job-openings/">Join Our Team</a></li>
+	<li id="menu-item-5546" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5546"><a href="https://www.ovt.com/company/careers#meet-our-talent">Meet Our Talent</a></li>
+	<li id="menu-item-3459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3459"><a href="https://www.ovt.com/company/internship/">Internship</a></li>
+</ul>
+</li>
+<li id="menu-item-4987" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4987"><a>What&#8217;s New</a>
+<ul class="sub-menu">
+	<li id="menu-item-5211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5211"><a href="https://www.ovt.com/awards-recognition/">Awards</a></li>
+	<li id="menu-item-5277" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5277"><a href="https://www.ovt.com/blog/">Blog &#038; Podcasts</a></li>
+	<li id="menu-item-5210" class="menu-item menu-item-type-post_type menu-item-object-events menu-item-5210"><a href="https://www.ovt.com/company/events/customer-experience-center/">Customer Experience Center</a></li>
+	<li id="menu-item-4989" class="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-4989"><a href="https://www.ovt.com/company/events/">Events</a></li>
+	<li id="menu-item-5209" class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-5209"><a href="https://www.ovt.com/company/news/">In the News</a></li>
+	<li id="menu-item-4990" class="menu-item menu-item-type-post_type_archive menu-item-object-press_releases menu-item-4990"><a href="https://www.ovt.com/press-releases/">Press Releases</a></li>
+</ul>
+</li>
+</ul>          </nav>
+        </div>
+        <div class="header-right">
+          <ul>
+            <li>
+              <a class="header-search"></a>
+            </li>
+            <li class="header-globe hide">
+              <img src="https://www.ovt.com/wp-content/themes/ovt/img/icon-header-globe.svg" />
+            </li>
+            <li class="hamburger-nav">
+              <div class="hamburger hamburger--squeeze js-hamburger">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </li>
+            <li class="header-right-btn">
+              <a href="https://www.ovt.com/contact-sales/" class="btn-red">
+                Contact Sales              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-search-content text-center">
+          <div class="header-search-content-wrap">
+            <form action="https://www.ovt.com/search-results/" method="get">
+              <input id="s" maxlength="150" name="search" size="20" type="text" placeholder="Search" />
+              <button type="submit" value=""></button>
+            </form>
+            <a class="header-search-close"></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <div class="header-mobile-nav">
+          <nav>
+            <ul id="menu-main-menu-1" class="n-h"><li class="menu-item-products menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1613"><a>Products</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1731"><a href="/products#image-sensor">Image Sensors</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1732"><a href="/products#asic">ASIC</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1733"><a href="/products#cameracubechip">CameraCubeChip®</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1734"><a href="/products#lcos">LCOS</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4184"><a href="/products#touchanddisplay">Display Solutions</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7333"><a href="/products#ovmed-isp">OVMed® ISP</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7334"><a href="/products#cable-module">OVMed® Cable Module</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-765"><a>Applications</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1616"><a href="https://www.ovt.com/applications/automotive/">Automotive</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="https://www.ovt.com/applications/automotive/">Overview</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2907"><a href="https://www.ovt.com/applications/automotive/sensing-applications/">Automotive Sensing Applications</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2906"><a href="https://www.ovt.com/applications/automotive/viewing-applications/">Automotive Viewing Applications</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10236"><a href="https://www.ovt.com/applications/machine-vision/">Machine Vision</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2923"><a href="https://www.ovt.com/applications/iot-emerging/scanner/">Scanner</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1617"><a href="https://www.ovt.com/applications/medical/">Medical</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1541"><a href="https://www.ovt.com/applications/medical/">Overview</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2908"><a href="https://www.ovt.com/applications/medical/brain-eyes-heart-and-spine/">Brain, Eyes, Heart &#038; Spine</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5815"><a href="https://www.ovt.com/applications/medical/dental/">Dental</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2909"><a href="https://www.ovt.com/applications/medical/ear-nose-throat-and-airway-management/">Ear, Nose, Throat &#038; Airway</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2910"><a href="https://www.ovt.com/applications/medical/stomach-intestine/">Stomach &#038;Intestine</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2911"><a href="https://www.ovt.com/applications/medical/urology-and-gynaecology/">Urology &#038; Gynaecology</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2912"><a href="https://www.ovt.com/applications/medical/musculo-skeletal/">Musculo Skeletal</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1618"><a href="https://www.ovt.com/applications/mobile-devices/">Mobile</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1542"><a href="https://www.ovt.com/applications/mobile-devices/">Overview</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2915"><a href="https://www.ovt.com/applications/mobile-devices/3d-machine-vision/">3D Machine Vision</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2914"><a href="https://www.ovt.com/applications/mobile-devices/still-and-video-capturing/">Still and Video Capturing</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1619"><a href="https://www.ovt.com/applications/surveillance/">Security</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1543"><a href="https://www.ovt.com/applications/surveillance/">Overview</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2917"><a href="https://www.ovt.com/applications/surveillance/commercial-industrial-security-cameras/">Commercial Security Cameras</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="https://www.ovt.com/applications/surveillance/smart-home-monitoring/">Smart Home Monitoring</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1620"><a href="https://www.ovt.com/applications/iot-emerging/">Emerging</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1540"><a href="https://www.ovt.com/applications/iot-emerging/">Overview</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="https://www.ovt.com/applications/iot-emerging/ar-applications/">AR Applications</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="https://www.ovt.com/applications/iot-emerging/vr-applications/">VR Applications</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2922"><a href="https://www.ovt.com/applications/iot-emerging/robotic-vacuums/">Robotic Vacuums</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1621"><a href="https://www.ovt.com/applications/computing/">Computing</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1539"><a href="https://www.ovt.com/applications/computing/">Overview</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2913"><a href="https://www.ovt.com/applications/computing/3d-machine-vision/">3D Machine Vision</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2916"><a href="https://www.ovt.com/applications/computing/still-image-video-camera/">Still Image Video Camera</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="nav-tech menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1614"><a>Technologies</a>
+<ul class="sub-menu">
+	<li class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-143"><a>Pixel technology</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453"><a href="https://www.ovt.com/technologies/nyxel-technology/">Nyxel® NIR (Near-Infrared) Sensor Technology</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://www.ovt.com/technologies/purecel/">PureCel®</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="https://www.ovt.com/technologies/purecel-plus/">PureCel®Plus</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://www.ovt.com/technologies/rgb-ir-technology/">RGB-IR Technology</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="https://www.ovt.com/technologies/omnipixel-3-gs/">OmniPixel®3‑GS</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://www.ovt.com/technologies/omnipixel-3-hs/">OmniPixel®3‑HS</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="https://www.ovt.com/technologies/omnibsi/">OmniBSI™</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="https://www.ovt.com/technologies/omnibsi-2/">OmniBSI™-2</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8785"><a href="https://www.ovt.com/technologies/theiacel-technology/">TheiaCel® Technology</a></li>
+	<li class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-1544"><a>HDR</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1548"><a href="https://www.ovt.com/technologies/hdr/">HDR Technology</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5695"><a href="https://www.ovt.com/technologies/dcg-technology/">DCG™ Technology</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1550"><a href="https://www.ovt.com/technologies/scg-technology/">SCG Technology</a></li>
+	<li class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-1545"><a>CameraCubeChip®</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8289"><a href="https://www.ovt.com/technologies/antlinx/">AntLinx®</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1547"><a href="https://www.ovt.com/technologies/cameracubechip/">CameraCubeChip®</a></li>
+	<li class="header-submenu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-1546"><a>LCOS</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1549"><a href="https://www.ovt.com/technologies/lcos/">Liquid Crystal on Silicon (LCOS)</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1615"><a>Support</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="https://www.ovt.com/support/technical-support/">Technical Support</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5676"><a>ESG</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5677"><a href="https://www.ovt.com/esg/">Environmental, Social, and Governance</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9163"><a href="https://www.omnivision-group.com/GDR-offering-related">Investors</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3460"><a>Careers</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3447"><a href="https://www.ovt.com/company/careers/">Overview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3458"><a href="https://www.ovt.com/company/job-openings/">Join Our Team</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5546"><a href="https://www.ovt.com/company/careers#meet-our-talent">Meet Our Talent</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3459"><a href="https://www.ovt.com/company/internship/">Internship</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4987"><a>What&#8217;s New</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5211"><a href="https://www.ovt.com/awards-recognition/">Awards</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5277"><a href="https://www.ovt.com/blog/">Blog &#038; Podcasts</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-events menu-item-5210"><a href="https://www.ovt.com/company/events/customer-experience-center/">Customer Experience Center</a></li>
+	<li class="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-4989"><a href="https://www.ovt.com/company/events/">Events</a></li>
+	<li class="menu-item menu-item-type-post_type_archive menu-item-object-news menu-item-5209"><a href="https://www.ovt.com/company/news/">In the News</a></li>
+	<li class="menu-item menu-item-type-post_type_archive menu-item-object-press_releases menu-item-4990"><a href="https://www.ovt.com/press-releases/">Press Releases</a></li>
+</ul>
+</li>
+</ul>          </nav>
+          <div class="header-search-content-wrap">
+            <input type="text" placeholder="Search">
+            <button type="submit"></button>
+            <a class="header-search-close"></a>
+          </div>
+          <div class="header-mobile-bottom">
+            <a href="https://www.ovt.com/contact-sales/" class="btn-red">
+              Contact Sales            </a>
+            <a class="header-globe">
+              <img src="https://www.ovt.com/wp-content/themes/ovt/img/icon-header-globe-white.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+
+    <main class="product-single-page">
+      <section class="product-single-intro">
+        <div class="product-single-intro-image animation-element fade-in">
+                                <img src="https://www.ovt.com/wp-content/uploads/2024/07/OV426-PRODUCT-BRIEF-IMAGE-RGB-1920x1097.jpg" alt="" />
+                    </div>
+        <div class="row row-md row-nopadd">
+          <div class="small-12 columns nopad product-single-intro-text">
+            <div class="product-single-intro-psit-box-hold animation-element fade-up">
+              <div class="product-single-intro-psit-box">
+                <div class="psit-box-image">
+                  <img src="https://www.ovt.com/wp-content/uploads/2021/12/OV426-ASIC.png" alt="" />
+                </div>
+                <div class="psit-box-box-title">
+                  Camera Bridge Processor                </div>
+                <div class="psit-box-box-list">
+                  <ul>
+                                          <li>
+                        <div class="psit-box-box-list-title">
+                          SKU                        </div>
+                        <div class="psit-box-box-list-serial">
+                          OV00426-B64G                        </div>
+                      </li>
+                                                              <li>
+                        <div class="psit-box-box-list-title">
+                          Package                        </div>
+                        <div class="psit-box-box-list-serial">
+                          BGA                        </div>
+                      </li>
+                                                                              </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-single-info animation-element fade-up">
+        <div class="row row-xsm">
+          <div class="small-12 columns nopad product-single-info-box">
+            <div class="small-12 columns nopad product-single-info-text">
+                              <h1 class="product-single-info">
+                  Compact Image Signal Processor for Medical Imaging Applications                </h1>
+              
+              <p>The OV426 is a single chip solution for small medical image sensors like the <a href="https://www.ovt.com/products/ov6946/" target="_blank" rel="noopener">OV6946</a> and <a href="https://www.ovt.com/products/ov6948/" target="_blank" rel="noopener">OV6948</a>. The OV426 provides an integrated analog-to-digital data conversion using a built-in A/D converter (ADC), black level calibration (BLC), AEC/AGC and a final digital video parallel output (DVP). The OV426 supports a standard SCCB interface to communicate with the system and manipulate the above mentioned functions.</p>
+<p><a href="https://www.ovt.com/wp-content/uploads/2024/07/OV426-ASIC-RGB.png" target="_blank" rel="noopener noreferrer"><img decoding="async" style="display: block; margin-left: auto; margin-right: auto; width: 75%;" src="https://www.ovt.com/wp-content/uploads/2024/07/OV426-ASIC-RGB.png" alt="Compact Image Signal Processor for Medical Imaging Applications" /></a></p>
+<p>During operation, the OV426 decodes the proprietary analog output from the <a href="https://www.ovt.com/products/ov6946/" target="_blank" rel="noopener">OV6946</a> and digitizes it by an ADC. The generated digital signals will then be processed by a digital signal processor (DSP) and finally, standard DVP outputs are sent out.</p>
+<p><a href="https://www.ovt.com/press-releases/omnivision-quadruples-resolution-and-reduces-size-of-worlds-smallest-commercial-image-sensor-breaks-own-guinness-world-record/" target="_blank" rel="noopener">March 9, 2021: OMNIVISION Quadruples Resolution and Reduces Size of World’s Smallest Commercial Image Sensor; Breaks Own Guinness World Record</a></p>
+            </div>
+                                      <div class="small-12 columns nopad product-single-info-links">
+                <ul>
+                  <li>
+                    <a href="https://www.ovt.com/wp-content/uploads/2024/07/OV426-PB-v1.2-WEB.pdf" class="btn-red" target="_blank" download>
+                      Download Product Guide
+                    </a>
+                  </li>
+                </ul>
+              </div>
+                      </div>
+        </div>
+      </section>
+      <section class="product-single-specs animation-element fade-up">
+        <div class="row">
+          <div class="small-12 columns nopad product-single-specs-tabs">
+            <div class="product-single-specs-tabs-nav">
+              <ul class="ovt-tabs" data-panels="ovt-panels">
+                                <li class="tabs-title is-active">
+                  <a data-tabs-target="panel1" href="#panel1" aria-selected="true">
+                    Features
+                  </a>
+                </li>
+                                <li class="tabs-title "  >
+                  <a data-tabs-target="panel2" href="#panel2" >
+                    Tech Specs
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="tabs-content" data-tabs="ovt-tabs" data-panels="ovt-panels">
+                            <div class="tabs-panel is-active" id="panel1">
+                <div class="tabs-content-left-p">
+                  <p>Complete imaging front-end solution</p>
+<p>400 x 400 at 30 fps</p>
+<p>Support for the following ISP functions:<br />&#8211; ADC<br />&#8211; BLC<br />&#8211; AEC/AGC<br />&#8211; MWB</p>
+<p>Analog input</p>
+<p>Support for:<br />&#8211; SCCB control<br />&#8211; 10-bit DVP data output<br />&#8211; SPI master</p>
+<p>Flexible input clock</p>
+<p>External system clock or independent crystal; internal PLL</p>
+<p>Low voltage operation</p>
+<p>6 mm x 6 mm to fit into handle or at back-end, near ISP in medical endoscope and other video devices</p>
+                </div>
+              </div>
+                            <div class="tabs-panel " id="panel2">
+                <div class="product-single-specs-items">
+                  <ul>
+                    <li class="spec-field spec-field__0">
+                      <div class="product-single-specs-items-title">
+                        Spec
+                      </div>
+                      <div class="product-single-specs-items-text">
+                        OV426                      </div>
+                    </li>
+
+                                            <li class="spec-field spec-field__asic_category" data-raw="ASIC - Category">
+                          <div class="product-single-specs-items-title">
+                            Category                          </div>
+                          <div class="product-single-specs-items-text">
+                            Sensor Bridge                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_description" data-raw="ASIC - Description">
+                          <div class="product-single-specs-items-title">
+                            Description                          </div>
+                          <div class="product-single-specs-items-text">
+                            Sensor bridge ASIC for OV6946 and OV6948 to covert analog output to digital and provide basic ISP functions                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_input_interface" data-raw="ASIC - Input Interface">
+                          <div class="product-single-specs-items-title">
+                            Input Interface                          </div>
+                          <div class="product-single-specs-items-text">
+                            Analog                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_key_features" data-raw="ASIC - Key Features">
+                          <div class="product-single-specs-items-title">
+                            Key Features                          </div>
+                          <div class="product-single-specs-items-text">
+                            ADC, Auto gain / auto exposure / manual white balance, black level calibration, Low Voltage, SCCB control                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_max_frame_rate" data-raw="ASIC - Max Frame Rate">
+                          <div class="product-single-specs-items-title">
+                            Max Frame Rate                          </div>
+                          <div class="product-single-specs-items-text">
+                            400 x 400 @ 30 fps                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_operating_temperature" data-raw="ASIC - Operating Temperature">
+                          <div class="product-single-specs-items-title">
+                            Operating Temperature                          </div>
+                          <div class="product-single-specs-items-text">
+                            -30°C to +70°C                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_output_interface" data-raw="ASIC - Output Interface">
+                          <div class="product-single-specs-items-title">
+                            Output Interface                          </div>
+                          <div class="product-single-specs-items-text">
+                            10-bit DVP                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_package_dimensions" data-raw="ASIC - Package Dimensions">
+                          <div class="product-single-specs-items-title">
+                            Package Dimensions                          </div>
+                          <div class="product-single-specs-items-text">
+                            6 x 6 mm                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_package_type" data-raw="ASIC - Package Type">
+                          <div class="product-single-specs-items-title">
+                            Package Type                          </div>
+                          <div class="product-single-specs-items-text">
+                            64-pin BGA                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_sensor_resolution" data-raw="ASIC - Sensor Resolution">
+                          <div class="product-single-specs-items-title">
+                            Sensor Resolution                          </div>
+                          <div class="product-single-specs-items-text">
+                            400&nbsp;x&nbsp;400                          </div>
+                        </li>
+                                                <li class="spec-field spec-field__asic_use_case" data-raw="ASIC - Use Case">
+                          <div class="product-single-specs-items-title">
+                            Use Case                          </div>
+                          <div class="product-single-specs-items-text">
+                            Catheters, Endoscopes, Wearables                          </div>
+                        </li>
+                                          </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+                                                    <section class="app-solutions product-single-app-solutions">
+                          <div class="row row-xs">
+                            <div class="small-12 columns nopad title-md text-center animation-element fade-up">
+                              <h2>
+                                Related Applications
+                              </h2>                      
+                            </div>
+                                                      </div>
+                          <div class="row">
+                            <div class="small-12 columns nopad app-solutions-list">
+                              <ul>
+                                                                                                      <li class="animation-element fade-up">
+                                      <a href="https://www.ovt.com/applications/medical/">
+                                        <div class="app-solutions-list-image">
+                                          <img src="https://www.ovt.com/wp-content/uploads/2022/01/Medical_Featured-1-1440x983.jpg" alt="">
+                                          <div class="app-solutions-list-title">
+                                            Medical                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                                                      <li class="animation-element fade-up">
+                                      <a href="https://www.ovt.com/applications/medical/brain-eyes-heart-and-spine/">
+                                        <div class="app-solutions-list-image">
+                                          <img src="https://www.ovt.com/wp-content/uploads/2021/12/OmniVision_Application_Medical_UseCases_BrainEyesHeartandSpine_HeroBanner-1440x550.jpg" alt="">
+                                          <div class="app-solutions-list-title">
+                                            Brain, Eyes, Heart, and Spine                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                                                      <li class="animation-element fade-up">
+                                      <a href="https://www.ovt.com/applications/medical/ear-nose-throat-and-airway-management/">
+                                        <div class="app-solutions-list-image">
+                                          <img src="https://www.ovt.com/wp-content/uploads/2021/12/OmniVision_Applications_Medical_UseCases_Ear-Nose-ThroatandAirwayManagement_HeroBanner-1-1440x550.jpg" alt="">
+                                          <div class="app-solutions-list-title">
+                                            Ear-Nose-Throat and Airway Management                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                                                      <li class="animation-element fade-up">
+                                      <a href="https://www.ovt.com/applications/medical/musculo-skeletal/">
+                                        <div class="app-solutions-list-image">
+                                          <img src="https://www.ovt.com/wp-content/uploads/2021/12/OmniVision_Applications_Medical_UseCases_Musculo-Skeletal_HeroBanner-1-1440x550.jpg" alt="">
+                                          <div class="app-solutions-list-title">
+                                            Musculo-Skeletal                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                                                      <li class="animation-element fade-up">
+                                      <a href="https://www.ovt.com/applications/medical/stomach-intestine/">
+                                        <div class="app-solutions-list-image">
+                                          <img src="https://www.ovt.com/wp-content/uploads/2021/12/OmniVision_Applications_Medical_UseCases_Stomach-Intestine_HeroBanner-1-1440x550.jpg" alt="">
+                                          <div class="app-solutions-list-title">
+                                            Stomach-Intestine                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                                                      <li class="animation-element fade-up">
+                                      <a href="https://www.ovt.com/applications/medical/urology-and-gynaecology/">
+                                        <div class="app-solutions-list-image">
+                                          <img src="https://www.ovt.com/wp-content/uploads/2021/12/OmniVision_Applications_Medical_UseCases_UrologyandGynaecology_HeroBanner-2-1440x550.jpg" alt="">
+                                          <div class="app-solutions-list-title">
+                                            Urology and Gynaecology                                          </div>
+                                        </div>
+                                      </a>
+                                    </li>
+                                                                                                                                  </ul>
+                            </div>
+                          </div>
+                        </section>
+                                                                    <section class="single-product-technologies">
+                          <div class="row row-md row-nopadd">
+                            <div class="small-12 columns nopad technologies-item">
+                              <div class="small-12 large-8 columns nopad technologies-item-content">
+                                <div class="small-12 columns nopad title-md animation-element fade-up">
+                                  Related Technologies                          
+                                </div>
+                                <div class="small-12 columns nopad single-product-technologies-list animation-element fade-up">
+                                  <ul>
+                                                                                                                  <li class="animation-element fade-up">
+                                          <a href="https://www.ovt.com/applications/medical/">
+                                            <span>Medical</span>
+                                          </a>
+                                        </li>
+                                                                              <li class="animation-element fade-up">
+                                          <a href="https://www.ovt.com/applications/medical/brain-eyes-heart-and-spine/">
+                                            <span>Brain, Eyes, Heart, and Spine</span>
+                                          </a>
+                                        </li>
+                                                                              <li class="animation-element fade-up">
+                                          <a href="https://www.ovt.com/applications/medical/ear-nose-throat-and-airway-management/">
+                                            <span>Ear-Nose-Throat and Airway Management</span>
+                                          </a>
+                                        </li>
+                                                                              <li class="animation-element fade-up">
+                                          <a href="https://www.ovt.com/applications/medical/musculo-skeletal/">
+                                            <span>Musculo-Skeletal</span>
+                                          </a>
+                                        </li>
+                                                                              <li class="animation-element fade-up">
+                                          <a href="https://www.ovt.com/applications/medical/stomach-intestine/">
+                                            <span>Stomach-Intestine</span>
+                                          </a>
+                                        </li>
+                                                                              <li class="animation-element fade-up">
+                                          <a href="https://www.ovt.com/applications/medical/urology-and-gynaecology/">
+                                            <span>Urology and Gynaecology</span>
+                                          </a>
+                                        </li>
+                                                                                                                                                  </ul>
+                                </div>
+                              </div>
+                              <div class="small-12 large-7 large-offset-5 columns nopad technologies-item-image-hold animation-element fade-in">
+                                <div class="small-12 columns nopad technologies-item-image animation-element fade-in">
+                                                                                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                                            </main>
+
+                      
+                  
+<footer>
+  <div class="footer-connect-section">
+    <img class="footer-connect-section-image" src="https://www.ovt.com/wp-content/uploads/2021/12/footer-cta-1920x848.png" alt="" />
+    <div class="row">
+      <div class="small-12 columns nopad footer-connect">
+        <div class="small-12 columns nopad footer-connect-title text-center">
+          Connect With Us        </div>
+        <div class="small-12 columns nopad footer-connect-text text-center">
+          Our teams are constantly working to exceed expectations with a collaborative focus on customer service and support. If you need more information, please contact the dedicated sales team in your region.        </div>
+        <div class="small-12 columns nopad footer-connect-btn text-center">
+                      <a href="/contact-sales/" class="btn-red btn-red-black">
+              Contact Sales            </a>
+                  </div>
+      </div>
+    </div>
+    <div id="subscribe" class="footer-subscribe-section">
+      <div class="row">
+        <div class="small-12 columns nopad text-center">
+          <div class="footer-subscribe-box">
+            <div class="footer-subscribe-title text-center">
+              Subscribe to OMNIVISION            </div>
+            <div class="footer-subscribe-text text-center">
+              Join our exclusive mailing list today.            </div>
+            <div class="text-center">
+              <div class="footer-subscribe-form-box">
+                <div class="footer-subscribe-form">
+                  
+                <div class='gf_browser_chrome gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital ovt-gravity-form_wrapper' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_1' ><style>#gform_wrapper_1[data-form-index="0"].gform-theme{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-btn-bg-color-hover-tertiary: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style><form method='post' enctype='multipart/form-data'  id='gform_1' class='ovt-gravity-form' action='/products/ov426/' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below' data-column-layout='fill'><fieldset id="field_1_1" class="gfield gfield--type-name gfield--input-type-name field_sublabel_hidden_label gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible" data-group-id="1a111219" data-field-span="12"><legend id='gfield_label_1_1' class='gfield_label gform-field-label gfield_label_before_complex' ><span class='gform-field-label__text'>Name</span></legend><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row' id='input_1_1'>
+                            
+                            <span id='input_1_1_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_1.3' id='input_1_1_3' value=''   aria-required='false'   placeholder='First Name*'  aria-labelledby="input_1_1_3_label gfield_label_1_1"/>
+                                                    <label for='input_1_1_3' id='input_1_1_3_label' class='gform-field-label gform-field-label--type-sub hidden_sub_label screen-reader-text'>First</label>
+                                                </span>
+                            
+                            <span id='input_1_1_6_container' class='name_last gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_1.6' id='input_1_1_6' value=''   aria-required='false'   placeholder='Last Name*'  />
+                                                    <label for='input_1_1_6' id='input_1_1_6_label' class='gform-field-label gform-field-label--type-sub hidden_sub_label screen-reader-text'>Last</label>
+                                                </span>
+                            
+                        </div></fieldset><div id="field_1_3" class="gfield gfield--type-email gfield--input-type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible" data-group-id="856a20fa" data-field-span="12"><label id='gfield_label_1_3' class='gfield_label gform-field-label' for='input_1_3'><span class='gform-field-label__text'>Email</span><span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_1_3' type='email' value='' class='large'   placeholder='Email*' aria-required="true" aria-invalid="false"  />
+                        </div></div><fieldset id="field_1_5" class="gfield gfield--type-checkbox gfield--type-choice gfield--input-type-checkbox gfield--width-full css-checkbox field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical" data-group-id="0418edf5" data-field-span="12"><legend id='gfield_label_1_5' class='gfield_label gform-field-label gfield_label_before_complex' ><span class='gform-field-label__text'>Choose Preferences:</span></legend><div class='ginput_container ginput_container_checkbox'><div class='gfield_checkbox ' id='input_1_5'><div class='gchoice gchoice_1_5_1'>
+								<input class='gfield-choice-input' name='input_5.1' type='checkbox'  value='Automotive'  id='choice_1_5_1'    aria-labelledby="label_1_5_1 gfield_label_1_5"/>
+								<label for='choice_1_5_1' id='label_1_5_1' class='gform-field-label gform-field-label--type-inline'>Automotive</label>
+							</div><div class='gchoice gchoice_1_5_2'>
+								<input class='gfield-choice-input' name='input_5.2' type='checkbox'  value='Computing'  id='choice_1_5_2'    />
+								<label for='choice_1_5_2' id='label_1_5_2' class='gform-field-label gform-field-label--type-inline'>Computing</label>
+							</div><div class='gchoice gchoice_1_5_3'>
+								<input class='gfield-choice-input' name='input_5.3' type='checkbox'  value='IoT / Emerging'  id='choice_1_5_3'    />
+								<label for='choice_1_5_3' id='label_1_5_3' class='gform-field-label gform-field-label--type-inline'>IoT / Emerging</label>
+							</div><div class='gchoice gchoice_1_5_4'>
+								<input class='gfield-choice-input' name='input_5.4' type='checkbox'  value='Machine Vision'  id='choice_1_5_4'    />
+								<label for='choice_1_5_4' id='label_1_5_4' class='gform-field-label gform-field-label--type-inline'>Machine Vision</label>
+							</div><div class='gchoice gchoice_1_5_5'>
+								<input class='gfield-choice-input' name='input_5.5' type='checkbox'  value='Medical'  id='choice_1_5_5'    />
+								<label for='choice_1_5_5' id='label_1_5_5' class='gform-field-label gform-field-label--type-inline'>Medical</label>
+							</div><div class='gchoice gchoice_1_5_6'>
+								<input class='gfield-choice-input' name='input_5.6' type='checkbox'  value='Mobile'  id='choice_1_5_6'    />
+								<label for='choice_1_5_6' id='label_1_5_6' class='gform-field-label gform-field-label--type-inline'>Mobile</label>
+							</div><div class='gchoice gchoice_1_5_7'>
+								<input class='gfield-choice-input' name='input_5.7' type='checkbox'  value='Security'  id='choice_1_5_7'    />
+								<label for='choice_1_5_7' id='label_1_5_7' class='gform-field-label gform-field-label--type-inline'>Security</label>
+							</div></div></div></fieldset><fieldset id="field_1_7" class="gfield gfield--type-consent gfield--type-choice gfield--input-type-consent gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible gfield--choice-align-vertical" data-group-id="e591e2e5" data-field-span="12"><legend id='gfield_label_1_7' class='gfield_label gform-field-label gfield_label_before_complex' ><span class='gform-field-label__text'>Consent</span><span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></legend><div class='ginput_container ginput_container_consent'><input name='input_7.1' id='input_1_7_1' type='checkbox' value='1'   aria-labelledby="input_1_7_1_label gfield_label_1_7" aria-required="true" aria-invalid="false"   /> <label id='input_1_7_1_label' class="gform-field-label gform-field-label--type-inline gfield_consent_label" for='input_1_7_1' ><span class='gform-field-label__text'>I have read and understood <a href="https://www.ovt.com/privacy-policy/">OMNIVISION’s Website Privacy Notice</a> and opted in to receive emails.</span><span class="gfield_required gfield_required_text">(Required)</span></label><input type='hidden' name='input_7.2' value='I have read and understood &lt;a href=&quot;https://www.ovt.com/privacy-policy/&quot;&gt;OMNIVISION’s Website Privacy Notice&lt;/a&gt; and opted in to receive emails.' class='gform_hidden' /><input type='hidden' name='input_7.3' value='1' class='gform_hidden' /></div></fieldset><div id="field_1_8" class="gfield gfield--type-turnstile gfield--input-type-turnstile gfield--width-full field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" data-group-id="a4f5d07f" data-field-span="12"><div class='ginput_container ginput_container_turnstile'><div class="cf-turnstile" id="cf-turnstile_1" data-js-turnstile data-response-field-name="cf-turnstile-response_1" data-theme="auto" data-size="" data-sitekey="0x4AAAAAABBdIGyx_Sizzegt"></div></div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <button type='submit' id='gform_submit_button_1' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' >.</button> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='rVOXp9oWQj68E0Wj7AhU4pFThL41PFgmLo+gEH1gZOeYXgfUp4mG7IMlNyUgSvDOae+lGJEHvBJg1Nnfij3bCqWwyqxYDTeWWoe0DDKHog625vk=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJ7XCI1LjFcIjpcIjU3NTMwMjhmODA0MmY2MDNiMjNjMmU2NTAwYTYwNWYwXCIsXCI1LjJcIjpcImUxYmM4NWRmNWJjZjI5MzM3Yjk4NzkwMzdkYmU0MTJjXCIsXCI1LjNcIjpcIjM4Y2VjZDg1ZjBkMzMwZjk0MzA4MjQ5NmJjZWVmZTBjXCIsXCI1LjRcIjpcIjRkYzgzYTEwZTUwNzcxZWJhZjRlYmNmZGVmODNmNDU1XCIsXCI1LjVcIjpcIjgxYzI5YTM2MTFjZGNjNDc2MjFlYWYxYjAxNjQ3M2E0XCIsXCI1LjZcIjpcImE2MGViMTcyYjAyZDczNDMwZDAwOWZjMzhjY2Q5YzZkXCIsXCI1LjdcIjpcIjRhZTllY2QzNjhiOTQ1MTI5Y2EwNWY4M2FiZWY3MmZlXCIsXCI3LjFcIjpcIjBkNTg4YzMxZTc5ZTVkNjczNzQ4YjUxZmM4NWNlMGFiXCIsXCI3LjJcIjpcImUyNWIwYWIwOGM3ODcxNzY3OWJjOWYyZGJhOTZhNDQyXCIsXCI3LjNcIjpcIjBkNTg4YzMxZTc5ZTVkNjczNzQ4YjUxZmM4NWNlMGFiXCIsXCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjk5ZWE2ZjAyMTJiZmE5NjFkM2MxYjY3YTZkM2I3NTc4XCIsXCI2OGI5OGVlMWMzMmMwNGY0Zjk2MWI3YjFiYzUyNGExOFwiXSxcImdmb3JtX3RoZW1lXCI6XCI5ZDBlNjQyN2JlNmY3NGY3YTNiM2Y2NzA0YWQwNGVlNFwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImYyNTA4OWI3ZTY5NjhmMjQyZmRmMzVmYzJkZTA1Y2M0XCIsXCJmb3JtX2lkXCI6XCIwZDU4OGMzMWU3OWU1ZDY3Mzc0OGI1MWZjODVjZTBhYlwiLFwidXJsXCI6XCJmMDY0N2UwNjZkZjU5YzE0MGZhMGZhMDY0NjAwZmEyOVwiLFwic3RhdGVfdGltZXN0YW1wXCI6XCJmZTkwODZmYjZlZmY3OWJiMDg4ZDM4NWE4NTA1MTRmNlwifSIsIjM2YjEwMDI5YTRkNDhkOTUyNDRhNTI4YjRmMmNhODU0IiwxNzkzMjY5MzY1XQ==' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>                  <style>
+                    #mc_embed_signup p
+                    {
+                      margin-bottom:0px;
+                    }
+                    #mc_embed_signup .mc-field-group {
+                      padding-left: 0.625rem;
+                      padding-right: 0.625rem;
+                    }
+                    #mc_embed_signup .mc-field-group.selectfield {
+                      width: 30% !important;
+                      float: left;
+                      clear: none;
+                      margin-right: 1%;
+                    }
+                    #mc_embed_signup .mc-field-group .formstyle {
+                      box-shadow: none;
+                      background: transparent;
+                      margin: 0;
+                      border: none;
+                      border-bottom: 1px solid #003478;
+                      height: 48px;
+                      font-size: 18px;
+                      line-height: 1.55;
+                      color: #262626;
+                      padding: 5px 0;
+                    }
+                    #mc_embed_signup .mc-field-group label {
+                      font-size:12px;
+                    }
+                    
+
+                  </style>
+                  <!-- <input type="text" placeholder="E-mail Address">
+                  <button type="submit" class="btn-footer-form hide-for-small-only"></button>
+                  <button type="submit" class="btn-red show-for-small-only">
+                      Subscribe
+                  </button> -->
+                </div>
+                <div class="footer-subscribe-form-text text-left support-form-left">
+                  <p>I have read and understood <a href="https://www.ovt.com/privacy-policy/">OMNIVISION&#8217;s Website Privacy Notice</a> and opted in to receive emails.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-main">
+    <div class="row">
+      <div class="small-12 medium-12 large-3 columns nopad footer-item-info">
+        <div class="small-12 columns nopad footer-logo">
+            <!--  <img src="https://www.ovt.com/wp-content/themes/ovt/img/logo-silver.png"> -->
+
+          <img src="https://www.ovt.com/wp-content/uploads/2025/06/OMNIVISION-RGB-NARROW-SILVER-WHITE-r.svg" alt="OMNIVISION">
+        </div>
+        <div class="small-12 columns nopad footer-socials">
+          <ul>
+                          <li>
+                <a href="https://www.twitter.com/OMNIVISION_NEWS" class="footer-socials-twitter" target="_blank"></a>
+              </li>
+                                      <li>
+                <a href="https://www.facebook.com/OMNIVISIONOfficial/?fref=ts" class="footer-socials-facebook" target="_blank"></a>
+              </li>
+                                      <li>
+                <a href="https://www.youtube.com/user/OMNIVISIONTech" class="footer-socials-youtube" target="_blank"></a>
+              </li>
+                                      <li>
+                <a href="https://www.linkedin.com/company/omnivision" class="footer-socials-linkedin" target="_blank"></a>
+              </li>
+                                      <li>
+                <a href="https://www.instagram.com/omnivision_news/" class="footer-socials-instagram" target="_blank"></a>
+              </li>
+                      </ul>
+        </div>
+                  <div class="small-12 columns nopad footer-btn">
+            <a href="/contact-sales/" class="btn-red">
+              Contact Sales            </a>
+          </div>
+              </div>
+      <div class="small-12 medium-4 large-3 columns footer-item">
+        <div class="small-12 columns nopad footer-item-title">
+          Products        </div>
+        <div class="small-12 columns nopad footer-item-nav">
+          <ul id="menu-footer-first-menu" class="n-h"><li id="menu-item-3451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3451"><a href="/products/#image-sensor">Image Sensors</a></li>
+<li id="menu-item-3452" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3452"><a href="/products/#asic">ASIC</a></li>
+<li id="menu-item-3453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3453"><a href="/products/#cameracubechip">CameraCubeChip®</a></li>
+<li id="menu-item-3454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3454"><a href="/products/#lcos">LCOS</a></li>
+<li id="menu-item-4248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4248"><a href="/products/#touchanddisplay">Display Solutions</a></li>
+<li id="menu-item-11843" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11843"><a href="https://www.ovt.com/products#ovmed-isp">OVMed® ISP</a></li>
+<li id="menu-item-11844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11844"><a href="https://www.ovt.com/products#cable-module">OVMed® Cable Module</a></li>
+</ul>        </div>
+        <div class="small-12 columns nopad footer-item-title">
+          Applications        </div>
+        <div class="small-12 columns nopad footer-item-nav">
+          <ul id="menu-footer-second-menu" class="n-h"><li id="menu-item-1584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://www.ovt.com/applications/automotive/">Automotive</a></li>
+<li id="menu-item-1589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1589"><a href="https://www.ovt.com/applications/computing/">Computing</a></li>
+<li id="menu-item-1588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1588"><a href="https://www.ovt.com/applications/iot-emerging/">Emerging</a></li>
+<li id="menu-item-11430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11430"><a href="https://www.ovt.com/applications/machine-vision/">Machine Vision</a></li>
+<li id="menu-item-1585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1585"><a href="https://www.ovt.com/applications/medical/">Medical</a></li>
+<li id="menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><a href="https://www.ovt.com/applications/mobile-devices/">Mobile</a></li>
+<li id="menu-item-1587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1587"><a href="https://www.ovt.com/applications/surveillance/">Security</a></li>
+</ul>        </div>
+      </div>
+      <div class="small-12 medium-4 large-3 columns footer-item">
+        <div class="small-12 columns nopad footer-item-title">
+          Technologies        </div>
+        <div class="small-12 columns nopad footer-item-nav">
+          <ul id="menu-footer-third-menu" class="n-h"><li id="menu-item-1591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1591"><a href="https://www.ovt.com/technologies/nyxel-technology/">Nyxel® NIR (Near-Infrared) Sensor Technology</a></li>
+<li id="menu-item-1592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592"><a href="https://www.ovt.com/technologies/purecel/">PureCel®</a></li>
+<li id="menu-item-1593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1593"><a href="https://www.ovt.com/technologies/purecel-plus/">PureCel®Plus</a></li>
+<li id="menu-item-1594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594"><a href="https://www.ovt.com/technologies/rgb-ir-technology/">RGB-IR Technology</a></li>
+<li id="menu-item-1595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595"><a href="https://www.ovt.com/technologies/omnipixel-3-hs/">OmniPixel®3‑HS</a></li>
+<li id="menu-item-1596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596"><a href="https://www.ovt.com/technologies/omnipixel-3-gs/">OmniPixel®3‑GS</a></li>
+<li id="menu-item-1598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1598"><a href="https://www.ovt.com/technologies/omnibsi/">OmniBSI™ Technology</a></li>
+<li id="menu-item-1597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a href="https://www.ovt.com/technologies/omnibsi-2/">OmniBSI™&#8209;2 Technology</a></li>
+<li id="menu-item-11842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11842"><a href="https://www.ovt.com/technologies/theiacel-technology/">TheiaCel® Technology</a></li>
+<li id="menu-item-1599" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1599"><a href="https://www.ovt.com/technologies/hdr/">HDR Technology</a></li>
+<li id="menu-item-11841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11841"><a href="https://www.ovt.com/technologies/dcg-technology/">DCG™ Technology</a></li>
+<li id="menu-item-1600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1600"><a href="https://www.ovt.com/technologies/scg-technology/">SCG Technology</a></li>
+<li id="menu-item-8288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8288"><a href="https://www.ovt.com/technologies/antlinx/">AntLinx®</a></li>
+<li id="menu-item-1601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601"><a href="https://www.ovt.com/technologies/cameracubechip/">CameraCubeChip®</a></li>
+<li id="menu-item-1602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602"><a href="https://www.ovt.com/technologies/lcos/">Liquid Crystal on Silicon (LCOS)</a></li>
+</ul>        </div>
+      </div>
+      <div class="small-12 medium-4 large-3 columns footer-item">
+        <div class="small-12 columns nopad footer-item-title">
+          Support        </div>
+        <div class="small-12 columns nopad footer-item-nav">
+          <ul id="menu-footer-fourth-menu" class="n-h"><li id="menu-item-1603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603"><a href="https://www.ovt.com/support/technical-support/">Technical Support</a></li>
+</ul>        </div>
+        <div class="small-12 columns nopad footer-item-title">
+          Company        </div>
+        <div class="small-12 columns nopad footer-item-nav">
+          <ul id="menu-footer-fifth-menu" class="n-h"><li id="menu-item-1605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605"><a href="https://www.ovt.com/company/about-us/">About Us</a></li>
+<li id="menu-item-4973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4973"><a href="https://www.ovt.com/awards-recognition/">Awards and Recognition</a></li>
+<li id="menu-item-5303" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5303"><a href="https://www.ovt.com/blog/">Blog &#038; Podcasts</a></li>
+<li id="menu-item-1611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a href="https://www.ovt.com/company/careers/">Careers</a></li>
+<li id="menu-item-1608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="https://www.ovt.com/company/corporate-governance/">Corporate Governance</a></li>
+<li id="menu-item-4062" class="menu-item menu-item-type-post_type menu-item-object-events menu-item-4062"><a href="https://www.ovt.com/company/events/customer-experience-center/">Customer Experience Center</a></li>
+<li id="menu-item-11848" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11848"><a href="https://www.ovt.com/esg/">ESG</a></li>
+<li id="menu-item-1610" class="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-1610"><a href="https://www.ovt.com/company/events/">Events</a></li>
+<li id="menu-item-1612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1612"><a href="https://www.ovt.com/company/contact-us/">Global Locations</a></li>
+<li id="menu-item-11845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11845"><a href="https://www.ovt.com/company/news/">In the News</a></li>
+<li id="menu-item-1607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607"><a href="https://www.ovt.com/company/intellectual-property/">Intellectual Property</a></li>
+<li id="menu-item-11847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11847"><a href="https://www.ovt.com/company/internship/">Internship</a></li>
+<li id="menu-item-11846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11846"><a href="https://www.ovt.com/company/job-openings/">Join Our Team</a></li>
+<li id="menu-item-1606" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1606"><a href="https://www.ovt.com/company/leadership/">Leadership</a></li>
+<li id="menu-item-5042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5042"><a href="https://www.ovt.com/partners/">Partners</a></li>
+<li id="menu-item-1609" class="menu-item menu-item-type-post_type_archive menu-item-object-press_releases menu-item-1609"><a href="https://www.ovt.com/press-releases/">Press Releases</a></li>
+</ul>        </div>
+      </div>
+      <div class="small-12 columns nopad footer-item-accordion">
+        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">
+              Products            </a>
+            <div class="accordion-content footer-item-nav" data-tab-content>
+              <ul id="menu-footer-first-menu-1" class="n-h"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3451"><a href="/products/#image-sensor">Image Sensors</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3452"><a href="/products/#asic">ASIC</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3453"><a href="/products/#cameracubechip">CameraCubeChip®</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3454"><a href="/products/#lcos">LCOS</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4248"><a href="/products/#touchanddisplay">Display Solutions</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11843"><a href="https://www.ovt.com/products#ovmed-isp">OVMed® ISP</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11844"><a href="https://www.ovt.com/products#cable-module">OVMed® Cable Module</a></li>
+</ul>            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">
+              Applications            </a>
+            <div class="accordion-content footer-item-nav" data-tab-content>
+              <ul id="menu-footer-second-menu-1" class="n-h"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1584"><a href="https://www.ovt.com/applications/automotive/">Automotive</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1589"><a href="https://www.ovt.com/applications/computing/">Computing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1588"><a href="https://www.ovt.com/applications/iot-emerging/">Emerging</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11430"><a href="https://www.ovt.com/applications/machine-vision/">Machine Vision</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1585"><a href="https://www.ovt.com/applications/medical/">Medical</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><a href="https://www.ovt.com/applications/mobile-devices/">Mobile</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1587"><a href="https://www.ovt.com/applications/surveillance/">Security</a></li>
+</ul>            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">
+              Technologies            </a>
+            <div class="accordion-content footer-item-nav" data-tab-content>
+              <ul id="menu-footer-third-menu-1" class="n-h"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1591"><a href="https://www.ovt.com/technologies/nyxel-technology/">Nyxel® NIR (Near-Infrared) Sensor Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1592"><a href="https://www.ovt.com/technologies/purecel/">PureCel®</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1593"><a href="https://www.ovt.com/technologies/purecel-plus/">PureCel®Plus</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1594"><a href="https://www.ovt.com/technologies/rgb-ir-technology/">RGB-IR Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1595"><a href="https://www.ovt.com/technologies/omnipixel-3-hs/">OmniPixel®3‑HS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1596"><a href="https://www.ovt.com/technologies/omnipixel-3-gs/">OmniPixel®3‑GS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1598"><a href="https://www.ovt.com/technologies/omnibsi/">OmniBSI™ Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a href="https://www.ovt.com/technologies/omnibsi-2/">OmniBSI™&#8209;2 Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11842"><a href="https://www.ovt.com/technologies/theiacel-technology/">TheiaCel® Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1599"><a href="https://www.ovt.com/technologies/hdr/">HDR Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11841"><a href="https://www.ovt.com/technologies/dcg-technology/">DCG™ Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1600"><a href="https://www.ovt.com/technologies/scg-technology/">SCG Technology</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8288"><a href="https://www.ovt.com/technologies/antlinx/">AntLinx®</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1601"><a href="https://www.ovt.com/technologies/cameracubechip/">CameraCubeChip®</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602"><a href="https://www.ovt.com/technologies/lcos/">Liquid Crystal on Silicon (LCOS)</a></li>
+</ul>            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">
+              Support            </a>
+            <div class="accordion-content footer-item-nav" data-tab-content>
+              <ul id="menu-footer-fourth-menu-1" class="n-h"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603"><a href="https://www.ovt.com/support/technical-support/">Technical Support</a></li>
+</ul>            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a class="accordion-title">
+              Company            </a>
+            <div class="accordion-content footer-item-nav" data-tab-content>
+              <ul id="menu-footer-fifth-menu-1" class="n-h"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605"><a href="https://www.ovt.com/company/about-us/">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4973"><a href="https://www.ovt.com/awards-recognition/">Awards and Recognition</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5303"><a href="https://www.ovt.com/blog/">Blog &#038; Podcasts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1611"><a href="https://www.ovt.com/company/careers/">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="https://www.ovt.com/company/corporate-governance/">Corporate Governance</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-events menu-item-4062"><a href="https://www.ovt.com/company/events/customer-experience-center/">Customer Experience Center</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11848"><a href="https://www.ovt.com/esg/">ESG</a></li>
+<li class="menu-item menu-item-type-post_type_archive menu-item-object-events menu-item-1610"><a href="https://www.ovt.com/company/events/">Events</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1612"><a href="https://www.ovt.com/company/contact-us/">Global Locations</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11845"><a href="https://www.ovt.com/company/news/">In the News</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607"><a href="https://www.ovt.com/company/intellectual-property/">Intellectual Property</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11847"><a href="https://www.ovt.com/company/internship/">Internship</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11846"><a href="https://www.ovt.com/company/job-openings/">Join Our Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1606"><a href="https://www.ovt.com/company/leadership/">Leadership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5042"><a href="https://www.ovt.com/partners/">Partners</a></li>
+<li class="menu-item menu-item-type-post_type_archive menu-item-object-press_releases menu-item-1609"><a href="https://www.ovt.com/press-releases/">Press Releases</a></li>
+</ul>            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright-section">
+    <div class="row">
+      <div class="small-12 columns nopad footer-copyright">
+        <a href="https://www.ovt.com/privacy-policy/">Privacy Notice</a> - © 2026 OMNIVISION. All rights reserved. 
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type='text/javascript'>
+  var home = {"url": "https://www.ovt.com/products/ov426"};
+  var filterAjax = {"url": "https://www.ovt.com/wp-admin/admin-ajax.php"};
+</script>
+
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/vendor/jquery.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/vendor/what-input.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/foundation.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/motion-ui.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/jquery.fancybox.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/owl.carousel.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/BeerSlider.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/nouislider.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/wNumb.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/jquery.validate.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/additional-methods.min.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/js.cookie.js"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/main.js?v=e49bac4a620098bd2295e5f08f8980c3"></script>
+<script src="https://www.ovt.com/wp-content/themes/ovt/js/products-view.js?v=89a08a69bc33481cfac6c678473e39b5"></script>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ovt/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<style class="wpcode-css-snippet">td.selector-for-ovmed.hidden,
+tr.selector-for-ovmed th.hidden{
+	display:none !important;
+}</style><script id="wp-hooks-js" src="https://www.ovt.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://www.ovt.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://www.ovt.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.ovt.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://www.ovt.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7"></script>
+<script id="wpcf7-redirect-script-js-extra">
+var wpcf7r = {"ajax_url":"https://www.ovt.com/wp-admin/admin-ajax.php"};
+//# sourceURL=wpcf7-redirect-script-js-extra
+</script>
+<script id="wpcf7-redirect-script-js" src="https://www.ovt.com/wp-content/plugins/wpcf7-redirect/build/assets/frontend-script.js?ver=2c532d7e2be36f6af233"></script>
+<script id="pojo-a11y-js-extra">
+var PojoA11yOptions = {"focusable":"","remove_link_target":"","add_role_links":"1","enable_save":"1","save_expiration":"24"};
+//# sourceURL=pojo-a11y-js-extra
+</script>
+<script id="pojo-a11y-js" src="https://www.ovt.com/wp-content/plugins/pojo-accessibility/modules/legacy/assets/js/app.min.js?ver=1.0.0"></script>
+<script id="wp-dom-ready-js" src="https://www.ovt.com/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23"></script>
+<script id="wp-a11y-js" src="https://www.ovt.com/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d"></script>
+<script id="gform_json-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.2.1"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"wdOffset":1,"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Disabled","markedTxt":"Selected","prevTxt":"Previous","nextTxt":"Next","monthTxt":"Month","yearTxt":"Year","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"days":[{"s":"S","l":"Sunday"},{"s":"M","l":"Monday"},{"s":"T","l":"Tuesday"},{"s":"W","l":"Wednesday"},{"s":"T","l":"Thursday"},{"s":"F","l":"Friday"},{"s":"S","l":"Saturday"}]}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","file_uploaded":"File uploaded","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://www.ovt.com/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://www.ovt.com/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"31b78d4cb44585ffbf9ef3d5ae69eaf0","countries":{"AF":"Afghanistan","AX":"\u00c5land Islands","AL":"Albania","DZ":"Algeria","AS":"American Samoa","AD":"Andorra","AO":"Angola","AI":"Anguilla","AQ":"Antarctica","AG":"Antigua and Barbuda","AR":"Argentina","AM":"Armenia","AW":"Aruba","AU":"Australia","AT":"Austria","AZ":"Azerbaijan","BS":"Bahamas","BH":"Bahrain","BD":"Bangladesh","BB":"Barbados","BY":"Belarus","BE":"Belgium","BZ":"Belize","BJ":"Benin","BM":"Bermuda","BT":"Bhutan","BO":"Bolivia","BQ":"Bonaire, Sint Eustatius and Saba","BA":"Bosnia and Herzegovina","BW":"Botswana","BV":"Bouvet Island","BR":"Brazil","IO":"British Indian Ocean Territory","BN":"Brunei Darussalam","BG":"Bulgaria","BF":"Burkina Faso","BI":"Burundi","CV":"Cabo Verde","KH":"Cambodia","CM":"Cameroon","CA":"Canada","KY":"Cayman Islands","CF":"Central African Republic","TD":"Chad","CL":"Chile","CN":"China","CX":"Christmas Island","CC":"Cocos Islands","CO":"Colombia","KM":"Comoros","CD":"Congo, Democratic Republic of the","CG":"Congo","CK":"Cook Islands","CR":"Costa Rica","CI":"C\u00f4te d'Ivoire","HR":"Croatia","CU":"Cuba","CW":"Cura\u00e7ao","CY":"Cyprus","CZ":"Czechia","DK":"Denmark","DJ":"Djibouti","DM":"Dominica","DO":"Dominican Republic","EC":"Ecuador","EG":"Egypt","SV":"El Salvador","GQ":"Equatorial Guinea","ER":"Eritrea","EE":"Estonia","SZ":"Eswatini","ET":"Ethiopia","FK":"Falkland Islands","FO":"Faroe Islands","FJ":"Fiji","FI":"Finland","FR":"France","GF":"French Guiana","PF":"French Polynesia","TF":"French Southern Territories","GA":"Gabon","GM":"Gambia","GE":"Georgia","DE":"Germany","GH":"Ghana","GI":"Gibraltar","GR":"Greece","GL":"Greenland","GD":"Grenada","GP":"Guadeloupe","GU":"Guam","GT":"Guatemala","GG":"Guernsey","GN":"Guinea","GW":"Guinea-Bissau","GY":"Guyana","HT":"Haiti","HM":"Heard Island and McDonald Islands","VA":"Holy See","HN":"Honduras","HK":"Hong Kong","HU":"Hungary","IS":"Iceland","IN":"India","ID":"Indonesia","IR":"Iran","IQ":"Iraq","IE":"Ireland","IM":"Isle of Man","IL":"Israel","IT":"Italy","JM":"Jamaica","JP":"Japan","JE":"Jersey","JO":"Jordan","KZ":"Kazakhstan","KE":"Kenya","KI":"Kiribati","KP":"Korea, Democratic People's Republic of","KR":"Korea, Republic of","KW":"Kuwait","KG":"Kyrgyzstan","LA":"Lao People's Democratic Republic","LV":"Latvia","LB":"Lebanon","LS":"Lesotho","LR":"Liberia","LY":"Libya","LI":"Liechtenstein","LT":"Lithuania","LU":"Luxembourg","MO":"Macao","MG":"Madagascar","MW":"Malawi","MY":"Malaysia","MV":"Maldives","ML":"Mali","MT":"Malta","MH":"Marshall Islands","MQ":"Martinique","MR":"Mauritania","MU":"Mauritius","YT":"Mayotte","MX":"Mexico","FM":"Micronesia","MD":"Moldova","MC":"Monaco","MN":"Mongolia","ME":"Montenegro","MS":"Montserrat","MA":"Morocco","MZ":"Mozambique","MM":"Myanmar","NA":"Namibia","NR":"Nauru","NP":"Nepal","NL":"Netherlands","NC":"New Caledonia","NZ":"New Zealand","NI":"Nicaragua","NE":"Niger","NG":"Nigeria","NU":"Niue","NF":"Norfolk Island","MK":"North Macedonia","MP":"Northern Mariana Islands","NO":"Norway","OM":"Oman","PK":"Pakistan","PW":"Palau","PS":"Palestine, State of","PA":"Panama","PG":"Papua New Guinea","PY":"Paraguay","PE":"Peru","PH":"Philippines","PN":"Pitcairn","PL":"Poland","PT":"Portugal","PR":"Puerto Rico","QA":"Qatar","RE":"R\u00e9union","RO":"Romania","RU":"Russian Federation","RW":"Rwanda","BL":"Saint Barth\u00e9lemy","SH":"Saint Helena, Ascension and Tristan da Cunha","KN":"Saint Kitts and Nevis","LC":"Saint Lucia","MF":"Saint Martin","PM":"Saint Pierre and Miquelon","VC":"Saint Vincent and the Grenadines","WS":"Samoa","SM":"San Marino","ST":"Sao Tome and Principe","SA":"Saudi Arabia","SN":"Senegal","RS":"Serbia","SC":"Seychelles","SL":"Sierra Leone","SG":"Singapore","SX":"Sint Maarten","SK":"Slovakia","SI":"Slovenia","SB":"Solomon Islands","SO":"Somalia","ZA":"South Africa","GS":"South Georgia and the South Sandwich Islands","SS":"South Sudan","ES":"Spain","LK":"Sri Lanka","SD":"Sudan","SR":"Suriname","SJ":"Svalbard and Jan Mayen","SE":"Sweden","CH":"Switzerland","SY":"Syria Arab Republic","TW":"Taiwan","TJ":"Tajikistan","TZ":"Tanzania, the United Republic of","TH":"Thailand","TL":"Timor-Leste","TG":"Togo","TK":"Tokelau","TO":"Tonga","TT":"Trinidad and Tobago","TN":"Tunisia","TR":"T\u00fcrkiye","TM":"Turkmenistan","TC":"Turks and Caicos Islands","TV":"Tuvalu","UG":"Uganda","UA":"Ukraine","AE":"United Arab Emirates","GB":"United Kingdom","US":"United States","UY":"Uruguay","UM":"US Minor Outlying Islands","UZ":"Uzbekistan","VU":"Vanuatu","VE":"Venezuela","VN":"Viet Nam","VG":"Virgin Islands, British","VI":"Virgin Islands, U.S.","WF":"Wallis and Futuna","EH":"Western Sahara","YE":"Yemen","ZM":"Zambia","ZW":"Zimbabwe"},"strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.2.1"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=3.2.1"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=d7e103405223e60d2719f4c330fd11cf"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=ddae8d403393f0e5eaeedeb511ce46e0"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"31b78d4cb44585ffbf9ef3d5ae69eaf0"},"ajax":{"ajaxurl":"https://www.ovt.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"a9ca1ee454","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"fields":{"repeater":{"strings":{"item_added":"added.","item_removed":"removed.","renumbered":"and above renumbered.","max_items":"You have reached the maximum number of repeated items.","confirm_delete":"Are you sure you want to remove {label} {number}?"}}},"hmr_dev":"","public_path":"https://www.ovt.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"5719f614fb"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=f7ff0a7a4cbd950275384188b97da558"></script>
+<script id="gform_turnstile_vendor_theme-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityformsturnstile/assets/js/dist/vendor-theme.min.js?ver=1.5.1"></script>
+<script id="gform_turnstile_vendor_script-js" defer='defer' src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+<script id="gform_turnstile_theme-js" defer='defer' src="https://www.ovt.com/wp-content/plugins/gravityformsturnstile/assets/js/dist/scripts-theme.min.js?ver=1.5.1"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.ovt.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://www.ovt.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+		<a id="pojo-a11y-skip-content" class="pojo-skip-link pojo-skip-content" tabindex="1" accesskey="s" href="#content">Skip to content</a>
+				<nav id="pojo-a11y-toolbar" class="pojo-a11y-toolbar-right" aria-label="Accessibility Toolbar">
+			<div class="pojo-a11y-toolbar-toggle">
+				<a class="pojo-a11y-toolbar-link pojo-a11y-toolbar-toggle-link" href="javascript:void(0);" title="Accessibility Tools" role="button">
+					<span class="pojo-sr-only sr-only">Open toolbar</span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" width="1em">
+						<title>Accessibility Tools</title>
+						<path d="M50 8.1c23.2 0 41.9 18.8 41.9 41.9 0 23.2-18.8 41.9-41.9 41.9C26.8 91.9 8.1 73.2 8.1 50S26.8 8.1 50 8.1M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 11.3c-21.4 0-38.7 17.3-38.7 38.7S28.6 88.7 50 88.7 88.7 71.4 88.7 50 71.4 11.3 50 11.3zm0 8.9c4 0 7.3 3.2 7.3 7.3S54 34.7 50 34.7s-7.3-3.2-7.3-7.3 3.3-7.2 7.3-7.2zm23.7 19.7c-5.8 1.4-11.2 2.6-16.6 3.2.2 20.4 2.5 24.8 5 31.4.7 1.9-.2 4-2.1 4.7-1.9.7-4-.2-4.7-2.1-1.8-4.5-3.4-8.2-4.5-15.8h-2c-1 7.6-2.7 11.3-4.5 15.8-.7 1.9-2.8 2.8-4.7 2.1-1.9-.7-2.8-2.8-2.1-4.7 2.6-6.6 4.9-11 5-31.4-5.4-.6-10.8-1.8-16.6-3.2-1.7-.4-2.8-2.1-2.4-3.9.4-1.7 2.1-2.8 3.9-2.4 19.5 4.6 25.1 4.6 44.5 0 1.7-.4 3.5.7 3.9 2.4.7 1.8-.3 3.5-2.1 3.9z"/>					</svg>
+				</a>
+			</div>
+			<div class="pojo-a11y-toolbar-overlay">
+				<div class="pojo-a11y-toolbar-inner">
+					<p class="pojo-a11y-toolbar-title">Accessibility Tools</p>
+
+					<ul class="pojo-a11y-toolbar-items pojo-a11y-tools">
+																			<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-resize-font pojo-a11y-btn-resize-plus" data-action="resize-plus" data-action-group="resize" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Increase Text</title><path fill="currentColor" d="M256 200v16c0 4.25-3.75 8-8 8h-56v56c0 4.25-3.75 8-8 8h-16c-4.25 0-8-3.75-8-8v-56h-56c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h56v-56c0-4.25 3.75-8 8-8h16c4.25 0 8 3.75 8 8v56h56c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Increase Text</span>								</a>
+							</li>
+
+							<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-resize-font pojo-a11y-btn-resize-minus" data-action="resize-minus" data-action-group="resize" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Decrease Text</title><path fill="currentColor" d="M256 200v16c0 4.25-3.75 8-8 8h-144c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h144c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Decrease Text</span>								</a>
+							</li>
+						
+													<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-grayscale" data-action="grayscale" data-action-group="schema" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Grayscale</title><path fill="currentColor" d="M15.75 384h-15.75v-352h15.75v352zM31.5 383.75h-8v-351.75h8v351.75zM55 383.75h-7.75v-351.75h7.75v351.75zM94.25 383.75h-7.75v-351.75h7.75v351.75zM133.5 383.75h-15.5v-351.75h15.5v351.75zM165 383.75h-7.75v-351.75h7.75v351.75zM180.75 383.75h-7.75v-351.75h7.75v351.75zM196.5 383.75h-7.75v-351.75h7.75v351.75zM235.75 383.75h-15.75v-351.75h15.75v351.75zM275 383.75h-15.75v-351.75h15.75v351.75zM306.5 383.75h-15.75v-351.75h15.75v351.75zM338 383.75h-15.75v-351.75h15.75v351.75zM361.5 383.75h-15.75v-351.75h15.75v351.75zM408.75 383.75h-23.5v-351.75h23.5v351.75zM424.5 383.75h-8v-351.75h8v351.75zM448 384h-15.75v-352h15.75v352z"></path></svg></span><span class="pojo-a11y-toolbar-text">Grayscale</span>								</a>
+							</li>
+						
+													<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-high-contrast" data-action="high-contrast" data-action-group="schema" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>High Contrast</title><path fill="currentColor" d="M192 360v-272c-75 0-136 61-136 136s61 136 136 136zM384 224c0 106-86 192-192 192s-192-86-192-192 86-192 192-192 192 86 192 192z"></path></svg></span><span class="pojo-a11y-toolbar-text">High Contrast</span>								</a>
+							</li>
+						
+													<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-negative-contrast" data-action="negative-contrast" data-action-group="schema" tabindex="-1" role="button">
+
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Negative Contrast</title><path fill="currentColor" d="M416 240c-23.75-36.75-56.25-68.25-95.25-88.25 10 17 15.25 36.5 15.25 56.25 0 61.75-50.25 112-112 112s-112-50.25-112-112c0-19.75 5.25-39.25 15.25-56.25-39 20-71.5 51.5-95.25 88.25 42.75 66 111.75 112 192 112s149.25-46 192-112zM236 144c0-6.5-5.5-12-12-12-41.75 0-76 34.25-76 76 0 6.5 5.5 12 12 12s12-5.5 12-12c0-28.5 23.5-52 52-52 6.5 0 12-5.5 12-12zM448 240c0 6.25-2 12-5 17.25-46 75.75-130.25 126.75-219 126.75s-173-51.25-219-126.75c-3-5.25-5-11-5-17.25s2-12 5-17.25c46-75.5 130.25-126.75 219-126.75s173 51.25 219 126.75c3 5.25 5 11 5 17.25z"></path></svg></span><span class="pojo-a11y-toolbar-text">Negative Contrast</span>								</a>
+							</li>
+						
+													<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-background-group pojo-a11y-btn-light-background" data-action="light-background" data-action-group="schema" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Light Background</title><path fill="currentColor" d="M184 144c0 4.25-3.75 8-8 8s-8-3.75-8-8c0-17.25-26.75-24-40-24-4.25 0-8-3.75-8-8s3.75-8 8-8c23.25 0 56 12.25 56 40zM224 144c0-50-50.75-80-96-80s-96 30-96 80c0 16 6.5 32.75 17 45 4.75 5.5 10.25 10.75 15.25 16.5 17.75 21.25 32.75 46.25 35.25 74.5h57c2.5-28.25 17.5-53.25 35.25-74.5 5-5.75 10.5-11 15.25-16.5 10.5-12.25 17-29 17-45zM256 144c0 25.75-8.5 48-25.75 67s-40 45.75-42 72.5c7.25 4.25 11.75 12.25 11.75 20.5 0 6-2.25 11.75-6.25 16 4 4.25 6.25 10 6.25 16 0 8.25-4.25 15.75-11.25 20.25 2 3.5 3.25 7.75 3.25 11.75 0 16.25-12.75 24-27.25 24-6.5 14.5-21 24-36.75 24s-30.25-9.5-36.75-24c-14.5 0-27.25-7.75-27.25-24 0-4 1.25-8.25 3.25-11.75-7-4.5-11.25-12-11.25-20.25 0-6 2.25-11.75 6.25-16-4-4.25-6.25-10-6.25-16 0-8.25 4.5-16.25 11.75-20.5-2-26.75-24.75-53.5-42-72.5s-25.75-41.25-25.75-67c0-68 64.75-112 128-112s128 44 128 112z"></path></svg></span><span class="pojo-a11y-toolbar-text">Light Background</span>								</a>
+							</li>
+						
+													<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-links-underline" data-action="links-underline" data-action-group="toggle" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Links Underline</title><path fill="currentColor" d="M364 304c0-6.5-2.5-12.5-7-17l-52-52c-4.5-4.5-10.75-7-17-7-7.25 0-13 2.75-18 8 8.25 8.25 18 15.25 18 28 0 13.25-10.75 24-24 24-12.75 0-19.75-9.75-28-18-5.25 5-8.25 10.75-8.25 18.25 0 6.25 2.5 12.5 7 17l51.5 51.75c4.5 4.5 10.75 6.75 17 6.75s12.5-2.25 17-6.5l36.75-36.5c4.5-4.5 7-10.5 7-16.75zM188.25 127.75c0-6.25-2.5-12.5-7-17l-51.5-51.75c-4.5-4.5-10.75-7-17-7s-12.5 2.5-17 6.75l-36.75 36.5c-4.5 4.5-7 10.5-7 16.75 0 6.5 2.5 12.5 7 17l52 52c4.5 4.5 10.75 6.75 17 6.75 7.25 0 13-2.5 18-7.75-8.25-8.25-18-15.25-18-28 0-13.25 10.75-24 24-24 12.75 0 19.75 9.75 28 18 5.25-5 8.25-10.75 8.25-18.25zM412 304c0 19-7.75 37.5-21.25 50.75l-36.75 36.5c-13.5 13.5-31.75 20.75-50.75 20.75-19.25 0-37.5-7.5-51-21.25l-51.5-51.75c-13.5-13.5-20.75-31.75-20.75-50.75 0-19.75 8-38.5 22-52.25l-22-22c-13.75 14-32.25 22-52 22-19 0-37.5-7.5-51-21l-52-52c-13.75-13.75-21-31.75-21-51 0-19 7.75-37.5 21.25-50.75l36.75-36.5c13.5-13.5 31.75-20.75 50.75-20.75 19.25 0 37.5 7.5 51 21.25l51.5 51.75c13.5 13.5 20.75 31.75 20.75 50.75 0 19.75-8 38.5-22 52.25l22 22c13.75-14 32.25-22 52-22 19 0 37.5 7.5 51 21l52 52c13.75 13.75 21 31.75 21 51z"></path></svg></span><span class="pojo-a11y-toolbar-text">Links Underline</span>								</a>
+							</li>
+						
+													<li class="pojo-a11y-toolbar-item">
+								<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-readable-font" data-action="readable-font" data-action-group="toggle" tabindex="-1" role="button">
+									<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Readable Font</title><path fill="currentColor" d="M181.25 139.75l-42.5 112.5c24.75 0.25 49.5 1 74.25 1 4.75 0 9.5-0.25 14.25-0.5-13-38-28.25-76.75-46-113zM0 416l0.5-19.75c23.5-7.25 49-2.25 59.5-29.25l59.25-154 70-181h32c1 1.75 2 3.5 2.75 5.25l51.25 120c18.75 44.25 36 89 55 133 11.25 26 20 52.75 32.5 78.25 1.75 4 5.25 11.5 8.75 14.25 8.25 6.5 31.25 8 43 12.5 0.75 4.75 1.5 9.5 1.5 14.25 0 2.25-0.25 4.25-0.25 6.5-31.75 0-63.5-4-95.25-4-32.75 0-65.5 2.75-98.25 3.75 0-6.5 0.25-13 1-19.5l32.75-7c6.75-1.5 20-3.25 20-12.5 0-9-32.25-83.25-36.25-93.5l-112.5-0.5c-6.5 14.5-31.75 80-31.75 89.5 0 19.25 36.75 20 51 22 0.25 4.75 0.25 9.5 0.25 14.5 0 2.25-0.25 4.5-0.5 6.75-29 0-58.25-5-87.25-5-3.5 0-8.5 1.5-12 2-15.75 2.75-31.25 3.5-47 3.5z"></path></svg></span><span class="pojo-a11y-toolbar-text">Readable Font</span>								</a>
+							</li>
+																		<li class="pojo-a11y-toolbar-item">
+							<a href="#" class="pojo-a11y-toolbar-link pojo-a11y-btn-reset" data-action="reset" tabindex="-1" role="button">
+								<span class="pojo-a11y-toolbar-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" viewBox="0 0 448 448"><title>Reset</title><path fill="currentColor" d="M384 224c0 105.75-86.25 192-192 192-57.25 0-111.25-25.25-147.75-69.25-2.5-3.25-2.25-8 0.5-10.75l34.25-34.5c1.75-1.5 4-2.25 6.25-2.25 2.25 0.25 4.5 1.25 5.75 3 24.5 31.75 61.25 49.75 101 49.75 70.5 0 128-57.5 128-128s-57.5-128-128-128c-32.75 0-63.75 12.5-87 34.25l34.25 34.5c4.75 4.5 6 11.5 3.5 17.25-2.5 6-8.25 10-14.75 10h-112c-8.75 0-16-7.25-16-16v-112c0-6.5 4-12.25 10-14.75 5.75-2.5 12.75-1.25 17.25 3.5l32.5 32.25c35.25-33.25 83-53 132.25-53 105.75 0 192 86.25 192 192z"></path></svg></span>
+								<span class="pojo-a11y-toolbar-text">Reset</span>
+							</a>
+						</li>
+					</ul>
+									</div>
+			</div>
+		</nav>
+		<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 1, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+
+
+
+<script type="text/javascript">
+//1
+  $(document).ready(function () {
+    $('input#unsubscribe').click(function () {
+      is_checked = $(this).is(':checked');
+      if (is_checked) {
+        $('input#interest').each(function () {
+          $(this).attr('disabled', true);
+          $(this).prop('checked', false);
+        });
+        $('input#subscribeAll').each(function () {
+          $(this).prop('checked', false);
+        });
+        $('#unsubscribe_comments').each(function () {
+          $(this).show();
+        });
+        $('textarea#unsubscribe_comments').each(function () {
+          $(this).show();
+        });
+      } else {
+        $('input#interest').each(function () {
+          $(this).attr('disabled', false);
+        });
+        $('#unsubscribe_comments').each(function () {
+          $(this).hide();
+        });
+        $('textarea#unsubscribe_comments').each(function () {
+          $(this).hide();
+        });
+      }
+    });
+    $('input#subscribeAll').click(function () {
+      is_checked = $(this).is(':checked');
+      if (is_checked) {
+        $('input#interest').each(function () {
+          $(this).attr('disabled', true);
+          $(this).prop('checked', true);
+        });
+        $('#unsubscribe').each(function () {
+          $(this).prop('checked', false);
+        });
+        $('#unsubscribe_comments').each(function () {
+          $(this).hide();
+        });
+        $('textarea#unsubscribe_comments').each(function () {
+          $(this).hide();
+        });
+      } else {
+        $('input#interest').each(function () {
+          $(this).attr('disabled', false);
+        });
+      }
+    });
+  });
+  //2
+  $(document).ready(function () {
+    is_unsubscripted = $('input#unsubscribe').is(':checked');
+
+    if (is_unsubscripted) {
+      $('input#interest').each(function () {
+        $(this).attr('disabled', true);
+        $(this).prop('checked', false);
+      });
+      $('input#subscribeAll').each(function () {
+        $(this).prop('checked', false);
+      });
+
+      $('#unsubscribe_comments').each(function () {
+        $(this).show();
+      });
+      $('textarea#unsubscribe_comments').each(function () {
+        $(this).show();
+      });
+    } else {
+      $('#unsubscribe_comments').each(function () {
+        $(this).hide();
+      });
+      $('textarea#unsubscribe_comments').each(function () {
+        $(this).hide();
+      });
+    }
+
+    is_subscriptedAll = $('input#subscribeAll').is(':checked');
+
+    if (is_subscriptedAll) {
+      $('input#interest').each(function () {
+        $(this).attr('disabled', true);
+        $(this).prop('checked', true);
+      });
+      $('input#unsubscribe').each(function () {
+        $(this).prop('checked', false);
+      });
+
+    }
+
+  });
+</script>
+<!-- to send mailchimp MERGE -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    var checkboxes = $('input[type=checkbox]');
+    var segment = '';
+    $(checkboxes).on('change', function () {
+      $(".hide_interest").each(function ()
+      {
+        $(this).val("NO");
+      })
+      $("input[name='interest[]']:checked").each(function ()
+      {
+        console.log($(this).val());
+        if ($(this).val() == 'Automotive') {
+          $("#automotive").val("YES");
+        }
+        if ($(this).val() == 'Medical imaging') {
+          $("#medical").val("YES"); }
+        if ($(this).val() == 'Mobile devices') {
+          $("#mobile").val("YES");
+        }
+        if ($(this).val() == 'IoT/Emerging') {
+          $("#iot").val("YES");
+        }
+        if ($(this).val() == 'Surveillance') {
+          $("#surveillance").val("YES"); }
+        if ($(this).val() == 'Computing') {
+          $("#computing").val("YES");
+        }
+      });
+    });
+  });
+</script>
+<!-- ---- -->
+<script>
+  $(".wpcf7-form textarea").each(function () {
+    this.setAttribute("style", "height:40px;overflow-y:hidden;");
+  }).on("input", function () {
+    this.style.height = 0;
+    this.style.height = (this.scrollHeight) + "px";
+  });
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a521bc1868b14626',t:'MTc5MzI3MjIzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

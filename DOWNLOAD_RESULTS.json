@@ -1,0 +1,177 @@
+[
+  {
+    "source": "https://files.waveshare.com/upload/d/da/OV5640_DataSheet.pdf",
+    "download_url": "https://files.waveshare.com/upload/d/da/OV5640_DataSheet.pdf",
+    "local": "downloaded\\files.waveshare.com_OV5640_DataSheet.pdf",
+    "bytes": 1684807,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/STMicroelectronics/STM32CubeF4",
+    "download_url": "https://github.com/STMicroelectronics/STM32CubeF4/archive/refs/heads/master.zip",
+    "local": "downloaded\\STMicroelectronics-STM32CubeF4.zip",
+    "bytes": 178126212,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/STMicroelectronics/stm32f4xx-hal-driver",
+    "download_url": "https://github.com/STMicroelectronics/stm32f4xx-hal-driver/archive/refs/heads/master.zip",
+    "local": "downloaded\\STMicroelectronics-stm32f4xx-hal-driver.zip",
+    "bytes": 1481949,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/iwatake2222/Camera_STM32_StdLib",
+    "download_url": "https://github.com/iwatake2222/Camera_STM32_StdLib/archive/refs/heads/master.zip",
+    "local": "downloaded\\iwatake2222-Camera_STM32_StdLib.zip",
+    "bytes": 692827,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/iwatake2222/DigitalCamera_STM32",
+    "download_url": "https://github.com/iwatake2222/DigitalCamera_STM32/archive/refs/heads/master.zip",
+    "local": "downloaded\\iwatake2222-DigitalCamera_STM32.zip",
+    "bytes": 6926816,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/mfkiwl/STM32-F7-ov2640-DCMI-example",
+    "download_url": "https://github.com/mfkiwl/STM32-F7-ov2640-DCMI-example/archive/refs/heads/master.zip",
+    "local": "downloaded\\mfkiwl-STM32-F7-ov2640-DCMI-example.zip",
+    "bytes": 897369,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/t27/stm32f4-dcmi-jpeg",
+    "download_url": "https://github.com/t27/stm32f4-dcmi-jpeg/archive/refs/heads/master.zip",
+    "local": "downloaded\\t27-stm32f4-dcmi-jpeg.zip",
+    "bytes": 7193905,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/tarasii/stm32f429_ov2640_lcd",
+    "download_url": "https://github.com/tarasii/stm32f429_ov2640_lcd/archive/refs/heads/master.zip",
+    "local": "downloaded\\tarasii-stm32f429_ov2640_lcd.zip",
+    "bytes": 853901,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://github.com/xujunjie96/STM32F407-OV7725",
+    "download_url": "https://github.com/xujunjie96/STM32F407-OV7725/archive/refs/heads/master.zip",
+    "local": "downloaded\\xujunjie96-STM32F407-OV7725.zip",
+    "bytes": 2202679,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.arducam.com/downloads/shields/ArduCAM_Camera_Shield_V2_DS.pdf",
+    "download_url": "https://www.arducam.com/downloads/shields/ArduCAM_Camera_Shield_V2_DS.pdf",
+    "local": "",
+    "bytes": 0,
+    "status": "FAILED: HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://www.buydisplay.com/square-2-inch-480x360-ips-tft-lcd-display-spi-rgb-interface",
+    "download_url": "https://www.buydisplay.com/square-2-inch-480x360-ips-tft-lcd-display-spi-rgb-interface",
+    "local": "",
+    "bytes": 0,
+    "status": "FAILED: HTTP Error 403: Forbidden"
+  },
+  {
+    "source": "https://www.camemake.eu/shop/endoscope-17/cm-endo-001-ultra-compact-endoscope-module-with-omnivision-ov6946-sensor-957",
+    "download_url": "https://www.camemake.eu/shop/endoscope-17/cm-endo-001-ultra-compact-endoscope-module-with-omnivision-ov6946-sensor-957",
+    "local": "downloaded\\www.camemake.eu_cm-endo-001-ultra-compact-endoscope-module-with-omnivision-ov6946-sensor-957.html",
+    "bytes": 125976,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ichome.com/product-detail/omnivision-technologies/ovm6948-rala",
+    "download_url": "https://www.ichome.com/product-detail/omnivision-technologies/ovm6948-rala",
+    "local": "downloaded\\www.ichome.com_ovm6948-rala.html",
+    "bytes": 65487,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.omnivision-group.com/files/pd/file/OH0117-PB-v1.4-WEB.pdf",
+    "download_url": "https://www.omnivision-group.com/files/pd/file/OH0117-PB-v1.4-WEB.pdf",
+    "local": "downloaded\\www.omnivision-group.com_OH0117-PB-v1.4-WEB.pdf",
+    "bytes": 2051802,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/products/oh0117/",
+    "download_url": "https://www.ovt.com/products/oh0117/",
+    "local": "downloaded\\www.ovt.com_oh0117.html",
+    "bytes": 144047,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/products/ov426/",
+    "download_url": "https://www.ovt.com/products/ov426/",
+    "local": "downloaded\\www.ovt.com_ov426.html",
+    "bytes": 155179,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/products/ov6946/",
+    "download_url": "https://www.ovt.com/products/ov6946/",
+    "local": "downloaded\\www.ovt.com_ov6946.html",
+    "bytes": 148505,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/products/ov6948/",
+    "download_url": "https://www.ovt.com/products/ov6948/",
+    "local": "downloaded\\www.ovt.com_ov6948.html",
+    "bytes": 150927,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/products/ovm6948/",
+    "download_url": "https://www.ovt.com/products/ovm6948/",
+    "local": "downloaded\\www.ovt.com_ovm6948.html",
+    "bytes": 161359,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/wp-content/uploads/2022/01/OV6946-PB-v1.8-WEB.pdf",
+    "download_url": "https://www.ovt.com/wp-content/uploads/2022/01/OV6946-PB-v1.8-WEB.pdf",
+    "local": "",
+    "bytes": 0,
+    "status": "FAILED: HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://www.ovt.com/wp-content/uploads/2023/02/OV6948-PB-v1.7-WEB.pdf",
+    "download_url": "https://www.ovt.com/wp-content/uploads/2023/02/OV6948-PB-v1.7-WEB.pdf",
+    "local": "downloaded\\www.ovt.com_OV6948-PB-v1.7-WEB.pdf",
+    "bytes": 1646025,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/wp-content/uploads/2023/02/OVM6946-PB-v1.7-WEB.pdf",
+    "download_url": "https://www.ovt.com/wp-content/uploads/2023/02/OVM6946-PB-v1.7-WEB.pdf",
+    "local": "",
+    "bytes": 0,
+    "status": "FAILED: HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://www.ovt.com/wp-content/uploads/2023/03/OVM6948-PB-v1.5-WEB.pdf",
+    "download_url": "https://www.ovt.com/wp-content/uploads/2023/03/OVM6948-PB-v1.5-WEB.pdf",
+    "local": "downloaded\\www.ovt.com_OVM6948-PB-v1.5-WEB.pdf",
+    "bytes": 1618984,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.ovt.com/wp-content/uploads/2024/07/OV426-PB-v1.2-WEB.pdf",
+    "download_url": "https://www.ovt.com/wp-content/uploads/2024/07/OV426-PB-v1.2-WEB.pdf",
+    "local": "downloaded\\www.ovt.com_OV426-PB-v1.2-WEB.pdf",
+    "bytes": 714980,
+    "status": "downloaded"
+  },
+  {
+    "source": "https://www.st.com/resource/en/application_note/an5020-introduction-to-digital-camera-interface-dcmi-for-stm32-mcus-stmicroelectronics.pdf",
+    "download_url": "https://www.st.com/resource/en/application_note/an5020-introduction-to-digital-camera-interface-dcmi-for-stm32-mcus-stmicroelectronics.pdf",
+    "local": "",
+    "bytes": 0,
+    "status": "FAILED: The read operation timed out"
+  }
+]
